@@ -2,6 +2,9 @@
 title: abaqus-tips <img src="\pic\dassaultsystemes.svg" width=20pt hight=20pt>
 date: 2021-10-30 01:10:11
 tags: abaqus
+coauthor: 
+    - Group D;
+    - Chen Yu
 ---
 {% note primary %}
 # Abaqus Tips 

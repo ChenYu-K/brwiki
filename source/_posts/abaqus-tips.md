@@ -39,11 +39,12 @@ coauthor:
 力を構造物の変形後の断面積で割って得られる応力.  
 {% endnote %}
 
-![stress](https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/stress.png)
+<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/stress.png" width="80%" />
+<!-- ![stress](https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/stress.png) -->
 
 abaqusでは真応力-真ひずみで構成則を入力しなければならない．
-
-![機械的⇒塑性⇒金属塑性](https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/step0.png)
+<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/step0.png" width="80%">
+<!-- ![機械的⇒塑性⇒金属塑性](https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/step0.png) -->
 
 ## 鋼材の構成則(弾塑性解析)の種類
 
@@ -58,12 +59,12 @@ abaqusでは真応力-真ひずみで構成則を入力しなければならな�
 弾性域，降伏棚，ひずみ硬化を有する構成則．
 バイリニア型のものに比べて大きなひずみ領域まで適用できる．
 
-<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat1.png">
+<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat1.png" width="80%" />
 
 ### 硬化則
 多くの材料の降伏条件は、荷重の履歴と塑性ひずみの変化に依存する．
 荷重による降伏条件の変化は硬化と呼ばれ、硬化則とはこれを規定したものである．塑性ひずみの進展に伴う降伏曲面の変化の仕方により、弾塑性材料の性質を特徴付けることができる．
 (細かい話はゼミAで勉強してください)
 
-<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat2.png">
-<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat3.png">
+<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat2.png" width="80%" />
+<img src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat3.png" width="80%"/>

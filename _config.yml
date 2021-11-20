@@ -4,8 +4,8 @@
 
 # Site
 title: <i class="fas fa-dragon"></i> BRWIKI
-subtitle: ''
-description: 'bridge lab. database'
+subtitle: 'Welcom to brwiki'
+description: 'Bridge lab. database'
 keywords:
 author: Bridge Engineering Lab.
 language: ja
@@ -88,7 +88,7 @@ updated_option: 'mtime'
 per_page: 10
 pagination_dir: page
 
-# https://github.com/next-theme/hexo-word-counter
+#https://github.com/next-theme/hexo-word-counter
 # symbols_count_time:
 #   symbols: true
 #   time: true
@@ -107,6 +107,7 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+
 ## Themes: https://hexo.io/themes/
 theme: next
 # Deployment

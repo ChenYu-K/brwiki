@@ -6,6 +6,7 @@ coauthor:
     - Group D;
     - Chen Yu
 ---
+
 {% note primary %}
 # Abaqus Tips 
 今まで発表した，あるいはGROUPDから様々な有用なTIPSをまとめた．

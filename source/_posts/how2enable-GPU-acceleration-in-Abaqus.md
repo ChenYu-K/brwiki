@@ -1,5 +1,5 @@
 ---
-title: CUDAを用いてABAQUSを加速する方法
+title: CUDAを用いてABAQUSの速度アップ方法
 date: 2021-11-20 15:01:24
 tags: Abaqus
 coauthor: Yu Chen

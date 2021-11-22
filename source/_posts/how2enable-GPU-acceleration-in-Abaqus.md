@@ -2,7 +2,7 @@
 title: CUDAを用いてABAQUSの計算速度アップ方法
 date: 2021-11-20 15:01:24
 tags: Abaqus
-coauthor: Yu Chen
+coauthor: Yu Chen； Yugo Shirai
 ---
 
 本記事はどうやって [Nvidia CUDA](https://developer.nvidia.com/zh-cn/cuda-toolkit) [^1]を活用し，ABAQUSの計算速度を速めるか紹介します．

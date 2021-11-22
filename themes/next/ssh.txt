@@ -1,0 +1,2 @@
+ssh brdg@10.108.51.13
+cd /var/services/web/wiki

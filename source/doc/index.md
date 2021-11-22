@@ -1,7 +1,13 @@
 ---
-title: doc
+title: 橋梁研ドキュメンテーション
 date: 2021-10-30 20:35:01
 ---
+
+{% note info %} 
+# Info
+<i class="fas fa-cog fa-spin"></i> 現在ドキュメンテーションを構築中です．
+{% endnote %}
+
 
 ## abc
 

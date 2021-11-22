@@ -1,7 +1,7 @@
 ---
-title: BMR
+title: 実験関係
 date: 2021-10-30 01:10:11
-tags: abaqus
+tags: experiment
 ---
 
 {% note info %} 

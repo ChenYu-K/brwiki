@@ -1,5 +1,5 @@
 ---
-title: abaqus-tips <img src="\pic\dassaultsystemes.svg" width=20pt hight=20pt>
+title: abaqus-tips
 date: 2021-10-30 01:10:11
 tags: abaqus
 coauthor: 

@@ -7,8 +7,10 @@ coauthor:
     - Chen Yu
 ---
 
+# Abaqus Tips
+
 {% note primary %}
-# Abaqus Tips 
+
 今まで発表した，あるいはGROUPDから様々な有用なTIPSをまとめた．
 (Tips編集者募集中―ボランティア)
 {% endnote %}
@@ -17,6 +19,7 @@ coauthor:
 
 ## 材料構成則
 --- 
+
 ### 材料構成則とは
 
 物体を構成する物質の力学的特性の数理的表現であり、個体や流流体を連続体に理想化した場合における力と変形との関係を

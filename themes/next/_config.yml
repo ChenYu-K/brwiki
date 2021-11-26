@@ -126,6 +126,7 @@ menu:
        Bolt modeling research: /BMR.html ||fas fa-cogs
      Experiment:
        default: /Experiment/ ||fas fa-book
+
        # 材料試験: /Script/material_test.html
      Script:
       default: /Script/ ||fas fa-laptop-code

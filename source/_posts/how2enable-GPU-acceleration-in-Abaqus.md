@@ -42,8 +42,9 @@ CUDAツールがないと，CUDAの機能が使えないので
 
 ![](https://i.imgur.com/KgAsN7K.png)
 
-{% note info %} 
-CUDAツールのインストール時間が結構長いですが，慌てないでください．これは通常状態です．
+
+{% note info %}
+CUDAツールのインストール時間が結構長いので，慌てずこれは通常状態です．
 {% endnote %}
 
 # PCの環境設定

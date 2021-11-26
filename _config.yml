@@ -134,6 +134,7 @@ markdown:
     - markdown-it-ins
     - markdown-it-sub
     - markdown-it-sup
+    - markdown-it-katex
   anchors:
     level: 1
     collisionSuffix: ''

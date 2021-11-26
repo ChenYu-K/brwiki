@@ -126,6 +126,11 @@ menu:
        Bolt modeling research: /BMR.html ||fas fa-cogs
      Experiment:
        default: /Experiment/ ||fas fa-book
+
+       # 材料試験: /Script/material_test.html
+     Script:
+      default: /Script/ ||fas fa-laptop-code
+      材料試験: /material-test.html || fa fa-th
   #about: /about || fas fa-dog
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
@@ -515,7 +520,7 @@ math:
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
   katex:
-    enable: false
+    enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
     copy_tex: false
 

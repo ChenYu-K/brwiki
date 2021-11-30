@@ -126,11 +126,11 @@ menu:
        Bolt modeling research: /BMR.html ||fas fa-cogs
      Experiment:
        default: /Experiment/ ||fas fa-book
-
        # 材料試験: /Script/material_test.html
      Script:
       default: /Script/ ||fas fa-laptop-code
       材料試験: /material-test.html || fa fa-th
+      行列一括変換: /transfor.html || fas fa-crop-alt
   #about: /about || fas fa-dog
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user
@@ -222,7 +222,7 @@ links:
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: true
+  number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.

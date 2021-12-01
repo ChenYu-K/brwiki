@@ -1,11 +1,8 @@
 ---
 title: 一括行列変換 V1.0
 date: 2021-11-24 18:23:25
-tags: 
-    - python
-    - matlab
+tags: matlab
 coauthor: Group_D
-katex: true
 ---
 
 {% gp 2-0 %}
@@ -26,7 +23,9 @@ katex: true
 # 操作手順
 ---
 
-![](/source/transfor/)
+![](/source/pic/yamato.png)
+
+
 
 # 注意点
 ---

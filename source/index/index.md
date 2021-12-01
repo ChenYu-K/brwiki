@@ -50,7 +50,7 @@ tags:
 ---
 
 ☞[解析に関するTIPS](/2021/10/30/abaqus-tips/)
-☞[高力ボルト摩擦接合継手モデリングガイドライン](https://cdn.jsdelivr.net/gh/ChenYu-K/database@main/documentation/BMR-v1.pdf)
+☞[高力ボルト摩擦接合継手モデリングガイドライン](https://cdn.jsdelivr.net/gh/ChenYu-K/brwiki@master/source/doc/BMR_V1.pdf)
 ☞[Abaqus_Documentation](https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/sim-r-DSDocAbaqus.htm?ContextScope=all)
 
 Abaqus license check: 

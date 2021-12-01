@@ -116,34 +116,43 @@ deploy:
   repo: https://github.com/ChenYu-K/bridgewiki.git
   branch: master
 
-markdown:
-  preset: 'default'
-  render:
+
+markdown_it_plus:
+    highlight: true
     html: true
-    xhtmlOut: false
-    langPrefix: 'language-'
+    xhtmlOut: true
     breaks: true
+    langPrefix:
     linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  enable_rules:
-  disable_rules:
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-    - markdown-it-katex
-  anchors:
-    level: 1
-    collisionSuffix: ''
-    permalink: true
-    permalinkClass: 'header-anchor'
-    permalinkSide: 'right'
-    permalinkSymbol: '¶'
-    case: 0
-    separator: '-'
+    typographer:
+    quotes: “”‘’
+    pre_class: highlight
+
+# markdown:
+#   preset: 'default'
+#   render:
+#     html: true
+#     xhtmlOut: false
+#     langPrefix: 'language-'
+#     breaks: true
+#     linkify: true
+#     typographer: true
+#     quotes: '“”‘’'
+#   enable_rules:
+#   disable_rules:
+#   plugins:
+#     # - markdown-it-abbr
+#     # - markdown-it-footnote
+#     - markdown-it-katex
+#   anchors:
+#     level: 1
+#     collisionSuffix: ''
+#     permalink: true
+#     permalinkClass: 'header-anchor'
+#     permalinkSide: 'right'
+#     permalinkSymbol: '¶'
+#     case: 0
+#     separator: '-'
     
 #https://github.com/r12f/hexo-heading-index
 heading_index:

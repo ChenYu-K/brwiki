@@ -16,7 +16,7 @@ tags: abaqus
 |[run111](/file/aba/Abaqus自動直列実行_V10_run111.vbs)|基本ソリッド、あるいは全橋モデルなど | 8CPU|
 |[runGPU](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（ソリッド、座屈、など）| 8CPU+1GPU|
 
-> Download: **右クリック，名前を付けてリンク先を保存**
+> Download: 名前をクリックしてダウンロード出来ます
 
 保存先: `common\便利グッズ\02.解析\直列実行スクリプト`  
 

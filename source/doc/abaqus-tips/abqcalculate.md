@@ -45,7 +45,7 @@ Total|7|568|
 |Brabq7| E5-1620v3@3.50GHz| 128G|
 |Braqb8| E5-2609v3@1.90GHz| 256G|
 |Brabq9| E5-2620v4@2.10GHz| 256G|
-|Brabq10| Silver 4110 CPU @2.10GHz | 128G|
+|Brabq10| Silver-4110@2.10GHz | 128G|
 
 # How to terminated the job?
 

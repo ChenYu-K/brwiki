@@ -5,7 +5,7 @@ tags:
 ---
 
 {% note info %} 
-Info: <i class="fas fa-cog fa-spin"></i> 構築中，ほしい機能がございましたら連絡してください．
+<i class="fas fa-cog fa-spin"></i> 構築中，ほしい機能がございましたら連絡してください．
 {% endnote %}
 
 # 便利帳Index

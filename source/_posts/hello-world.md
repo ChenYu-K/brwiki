@@ -18,12 +18,12 @@ coauthor: Chen Yu
 
 # 書き方
 
-本サイトは`Markdown` [^1]を基づいて`Hexo`[^2]から`Html`に自動変換されたものです．　　
+本サイトは`Markdown` [^1]を基づいて`Hexo` [^2]から`Html`に自動変換されたものです．　　
 Htmlを触らず，簡単に文書を作成するのは目的なので、基本Htmlのフォーマットは変更できない．　　
 
-<% note success%>
-サイトの書き方は基本`Markdown`と同じ．[Wikipekia](https://ja.wikipedia.org/wiki/Markdown)を参考してください．
-<% endnote%>
+{% note success %}
+サイトの書き方は基本`Markdown`と同じ．[Wikipekia](https://ja.wikipedia.org/wiki/Markdown)を参考してください
+{% endnote %}
 
 ## アルゴリズム
 
@@ -76,7 +76,36 @@ Htmlを触らず，簡単に文書を作成するのは目的なので、基本H
 <img src="url" width="80%" />
 ```
 
+## Flowchart
+
+Flowchartは`Mermaid` [^3] を使用している．
+[Documentation](https://mermaid-js.github.io/mermaid/#/flowchart)
+
+**書き方**
+
+---
+
+```markdown
+{% mermaid graph TD %}
+state if_state <<choice>>
+[*] --> if_state:Loop
+if_state --> Statements: yes
+Statements --> if_state
+if_state --> [*]: No]
+{% endmermaid %}
+```
+
+{% mermaid stateDiagram-v2 %}
+state if_state <<choice>>
+[*] --> if_state:Loop
+if_state --> Statements: yes
+Statements --> if_state
+if_state --> [*]: No
+
+{% endmermaid %}
+
 # Footnote  
 
-[^1]: [Markdown（マークダウン）は、文書を記述するための軽量マークアップ言語のひとつである.](https://ja.wikipedia.org/wiki/Markdown)
+[^1]: [Markdown（マークダウン）は、文書を記述するための軽量マークアップ言語のひとつである.](https://ja.wikipedia.org/wiki/Markdown)  
 [^2]: [A fast, simple & powerful blog framework](https://hexo.io/)
+[^3]: https://theme-next.js.org/docs/tag-plugins/mermaid.html#Settings

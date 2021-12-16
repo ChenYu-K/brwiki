@@ -120,18 +120,20 @@ menu:
   #categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   Documentation: 
-     default: /doc/ ||fa fa-book
-     Abaqus:
-       default: /abaqus-tips/ ||fas fa-laptop
-       Bolt modeling research: /BMR.html ||fas fa-cogs
-       サーバー計算の流れ: /abqcalculate.html ||fas fa-calculator
-     Experiment:
-       default: /Experiment/ ||fas fa-book
-       # 材料試験: /Script/material_test.html
-     Script:
+    default: /doc/ ||fa fa-book
+    Abaqus:
+      default: /abaqus-tips/ ||fas fa-laptop
+      Bolt modeling research: /BMR.html ||fas fa-cogs
+      サーバー計算の流れ: /abqcalculate.html ||fas fa-calculator
+    Experiment:
+      default: /Experiment/ ||fas fa-book
+      # 材料試験: /Script/material_test.html
+    Script:
       default: /Script/ ||fas fa-laptop-code
       材料試験: /material-test.html || fa fa-th
       行列一括変換: /transfor.html || fas fa-crop-alt
+    Code_tutorials:
+      default: /Code_tutorials/ || fas fa-code
   #about: /about || fas fa-dog
   tags: /tags/ || fa fa-tags
   about: /about/ || fa fa-user

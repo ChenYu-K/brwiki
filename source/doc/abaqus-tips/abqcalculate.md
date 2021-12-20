@@ -9,12 +9,12 @@ tags: abaqus
 ## 流す方
 橋梁研究基本四つ流れ方があります．
 
-|License|Momo|消費CPU|
-|---|---|---|
-|[run50](/file/aba/Abaqus自動直列実行_V10_run50.vbs)|データチェックや軽い計算の方| 1CPU|
-|[run75](/file/aba/Abaqus自動直列実行_V10_run75.vbs)|最も使われている．シェルやソリッド等々 | 4CPU|
-|[run111](/file/aba/Abaqus自動直列実行_V10_run111.vbs)|基本ソリッド、あるいは全橋モデルなど | 8CPU|
-|[runGPU](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（ソリッド、座屈、など）| 8CPU+1GPU|
+|License|Momo|消費CPU|License|
+|---|---|---|---|
+|[run50](/file/aba/Abaqus自動直列実行_V10_run50.vbs)|データチェックや軽い計算の方| 1CPU| 50|
+|[run75](/file/aba/Abaqus自動直列実行_V10_run75.vbs)|最も使われている．シェルやソリッド等々 | 4CPU| 76|
+|[run111](/file/aba/Abaqus自動直列実行_V10_run111.vbs)|基本ソリッド、あるいは全橋モデルなど | 8CPU| 111|
+|[runGPU](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（ソリッド、座屈、など）| 8CPU+1GPU| 120|
 
 > Download: 名前をクリックしてダウンロード出来ます
 

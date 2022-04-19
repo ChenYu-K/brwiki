@@ -25,11 +25,13 @@ tags:
 - <i class="far fa-folder-open"></i> [ファイル共有システム](http://brdg.civil.eng.osaka-cu.ac.jp/filePublisher/login.php)
 - <i class="fas fa-school"></i> [教室予約システム](https://www.r326.com/b/main.aspx?g=rMSqVK3523reGnQ80)  (Password:`toshi`)
 - <i class="fas fa-cog"></i> [アムスラー予約システム](https://www.r326.com/b/main.aspx?g=8YB015ird1oUonNH1)
-- <i class="fas fa-plug"></i> [停電情報](http://ann.cii.osaka-cu.ac.jp/announce/announce.html)
+- <i class="fas fa-plug"></i> [OMU障害/メンテナンス情報](https://e.omu.ac.jp/announce/)
 - <i class="fas fa-server"></i> [TS5410d285管理画面](http://10.108.51.9/login.html)
 - <i class="fas fa-server"></i> [NAS_SY21管理画面](http://10.108.51.13:5000/)
 - <i class="fas fa-hammer"></i> [日鉄ボルテンカタログ](http://www.bolten.co.jp/products/product)
 - <i class="fas fa-university"></i> [ocu全学ポータルサイト](https://www.portal.osaka-cu.ac.jp/ja/)
+- <i class="fas fa-university"></i>　[OMU　エントランス　ページ](https://e.omu.ac.jp/)
+
 <i class="far fa-university"></i>
 
 

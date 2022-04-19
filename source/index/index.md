@@ -43,10 +43,11 @@ tags:
 - 2014-2018年度卒―解析データ： \\BRABQ8\h
 - 2019年度以降―解析データ：\\BRABQ7\f
 
-<embed id="embed" src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/filemap.svg" type="image/svg+xml">
-
 # 解析
 ---
+![](/images/lisence.png)
+
+
 
 ☞[解析に関するTIPS](/2021/10/30/abaqus-tips/)
 ☞[高力ボルト摩擦接合継手モデリングガイドライン](https://cdn.jsdelivr.net/gh/ChenYu-K/brwiki@master/source/doc/BMR_V1.pdf)

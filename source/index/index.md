@@ -32,8 +32,6 @@ tags:
 - <i class="fas fa-university"></i> [ocu全学ポータルサイト](https://www.portal.osaka-cu.ac.jp/ja/)
 - <i class="fas fa-university"></i> [OMU　エントランス　ページ](https://e.omu.ac.jp/)
 
-<i class="far fa-university"></i>
-
 
 # データベース
 ---

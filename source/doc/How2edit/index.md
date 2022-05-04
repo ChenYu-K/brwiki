@@ -33,7 +33,7 @@ coauthor:
 
 # 書き方
 
-本サイトは{% label @Markdown %} [^1]を基づいて`Hexo` [^2]から`Html`に自動変換されたものです．　　
+本サイトは{% label info@Markdown %} [^1]を基づいて`Hexo` [^2]から`Html`に自動変換されたものです．　　
 Htmlを触らず，簡単に文書を作成するのは目的なので、基本Htmlのフォーマットは変更できない．　　
 
 {% note success %}
@@ -99,6 +99,28 @@ Htmlコードも使える．
 # Hexoにエンベデッドされた機能
 
 ## Tag
+
+### テキストの表記
+
+以下の書き方で，強調したいテキストを着色できる．　
+`class_name`を　`primary`, `success`, `info`, `warning`, `danger`交換し，
+`text`　をテキストで入力したら変換できる．
+
+```vim
+{% label class_name@text %}
+```
+
+**例えば:**
+|Code|Example|
+|:---:|:---:|
+|```{% label @テキスト %}```|{% label @テキスト %}|
+|```{% label primary@テキスト %}```|{% label primary@テキスト %}|
+|```{% label success@テキスト %}```|{% label success@テキスト %}|
+|```{% label info@テキスト %}```|{% label info@テキスト %}|
+|```{% label warning@テキスト %}```|{% label warning@テキスト %}|
+|```{% label danger@テキスト %}```|{% label danger@テキスト %}|
+
+### 情報枠
 
 ```
 {% note class_name %} Content (md partial supported) {% endnote %}

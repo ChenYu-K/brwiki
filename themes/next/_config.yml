@@ -384,10 +384,10 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: stackoverflow-dark
+    light: stackoverflow-light
     dark: stackoverflow-dark
   prism:
-    light: prism-tomorrow
+    light: prism
     dark: prism-tomorrow
   # Add copy button on codeblock
   copy_button:

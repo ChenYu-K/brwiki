@@ -74,9 +74,12 @@ Htmlコードも使える．
 
 これ`![](./pic/eg-1.png)`　を入力すると，以下のようになる．
 
-![](./pic/eg-1.png)
-
+aaa
+![example](./pic/eg-1.png)
+bbb
 {% asset_img ./pic/eg-1.png This is an example image %}
+ccc
+<img src="./pic/eg-1.png" width="80%" />
 
 {% note info %}　他のフォルダ内，あるいはwebsiteのグラフを引用する時，絶対位置を使うのは望ましい．例えば，{% endnote %}
 

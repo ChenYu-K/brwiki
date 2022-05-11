@@ -76,6 +76,7 @@ Htmlコードも使える．
 
 ![](./pic/eg-1.png)
 
+{% asset_img ./pic/eg-1.png This is an example image %}
 
 {% note info %}　他のフォルダ内，あるいはwebsiteのグラフを引用する時，絶対位置を使うのは望ましい．例えば，{% endnote %}
 

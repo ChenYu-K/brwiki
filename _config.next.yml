@@ -1,0 +1,280 @@
+# Schemes
+#scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+scheme: Gemini
+
+# Dark Mode
+darkmode: true
+
+# Usage: `Key: /link/ || icon`
+# Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-sensitive.
+# Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
+# External url should start with http:// or https://
+menu:
+  Index: /index/ || fa fa-home
+  #categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  Documentation: 
+    default: /doc/ ||fa fa-book
+    Abaqus:
+      default: /abaqus-tips/ ||fas fa-laptop
+      Bolt modeling research: /BMR.html ||fas fa-cogs
+      サーバー計算の流れ: /abqcalculate.html ||fas fa-calculator
+    Experiment:
+      default: /Experiment/ ||fas fa-book
+      # 材料試験: /Script/material_test.html
+    Script:
+      default: /Script/ ||fas fa-laptop-code
+      材料試験: /material-test.html || fa fa-th
+      行列一括変換: /transfor.html || fas fa-crop-alt
+    Code_tutorials:
+      default: /Code_tutorials/ || fas fa-code
+    How2Edit:
+      default: /How2edit/ || fas fa-question
+  #about: /about || fas fa-dog
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
+  schedule: /schedule/ || fa fa-calendar
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
+
+# Enable / Disable menu icons / item badges.
+menu_settings:
+  icons: true
+  badges: true
+
+social:
+  GitHub: https://github.com/ChenYu-K/bridgewiki || fab fa-github
+  E-Mail: chin@brdg.civil.eng.osaka-cu.ac.jp || fa fa-envelope
+  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  #Google: https://plus.google.com/yourname || fab fa-google
+  #Twitter: https://twitter.com/yourname || fab fa-twitter
+  FB Page: https://www.facebook.com/omukyoryoken || fab fa-facebook
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+  #YouTube: https://youtube.com/yourname || fab fa-youtube
+  Instagram: https://www.instagram.com/omu_bridge/ || fab fa-instagram
+  #Skype: skype:yourname?call|chat || fab fa-skype
+
+# Blog rolls
+links_settings:
+  icon: fa fa-link
+  title: 大阪市立大学橋梁工学研究室HP
+  # Available values: block | inline
+  layout: block
+
+links:
+  Site: http://brdg.civil.eng.osaka-cu.ac.jp/
+
+language_switcher: false
+
+# ---------------------------------------------------------------
+# Footer Settings
+# See: https://theme-next.js.org/docs/theme-settings/footer
+# ---------------------------------------------------------------
+
+footer:
+  # Specify the year when the site was setup. If not defined, current year will be used.
+  since: 2021
+
+  # Icon between year and copyright info.
+  icon:
+    # Icon name in Font Awesome. See: https://fontawesome.com/icons
+    name: fab fa-fort-awesome-alt
+    # If you want to animate the icon, set it to true.
+    animated: true
+    # Change the color of icon, using Hex Code.
+    color: "#9e4aff"
+
+  # If not defined, `author` from Hexo `_config.yml` will be used.
+  copyright: Bridge Engineering Lab.
+
+  # Powered by Hexo & NexT
+  powered: false
+
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
+  beian:
+    enable: false
+    icp:
+    # The digit in the num of gongan beian.
+    gongan_id:
+    # The full num of gongan beian.
+    gongan_num:
+    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+    gongan_icon_url:
+
+post_edit:
+  enable: true
+  url: https://github.com/ChenYu-K/brwiki/tree/master/source/ # Link for view source
+  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit
+# Show previous post and next post in post footer if exists
+# Available values: left | right | false
+post_navigation: left
+
+codeblock:
+  # Code Highlight theme
+  # All available themes: https://theme-next.js.org/highlight/
+  theme:
+    light: stackoverflow-light
+    dark: stackoverflow-dark
+  prism:
+    light: prism
+    dark: prism-tomorrow
+  # Add copy button on codeblock
+  copy_button:
+    enable: true
+    # Available values: default | flat | mac
+    style:
+
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: true
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+
+# Reading progress bar
+reading_progress:
+  enable: false
+  # Available values: left | right
+  start_at: true
+  # Available values: top | bottom
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 3px
+
+# Bookmark Support
+bookmark:
+  enable: false
+  # Customize the color of the bookmark.
+  color: "#222"
+  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
+  # If manual, only save it by clicking the bookmark-icon.
+  save: auto
+
+# `Follow me on GitHub` banner in the top-right corner.
+github_banner:
+  enable: false
+  permalink: https://github.com/yourname
+  title: Follow me on GitHub
+
+math:
+  # Default (false) will load mathjax / katex script on demand.
+  # That is it only render those page which has `mathjax: true` in front-matter.
+  # If you set it to true, it will load mathjax / katex script EVERY PAGE.
+  every_page: false
+
+  mathjax:
+    enable: false
+    # Available values: none | ams | all
+    tags: none
+
+  katex:
+    enable: true
+    # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    copy_tex: true
+
+# Easily enable fast Ajax navigation on your website.
+# For more information: https://github.com/next-theme/pjax
+pjax: true
+
+# FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
+# For more information: https://fancyapps.com/fancybox/
+fancybox: false
+
+# A JavaScript library for zooming images like Medium.
+# Warning: Do not enable both `fancybox` and `mediumzoom`.
+# For more information: https://medium-zoom.francoischalifour.com
+mediumzoom: true
+
+# Vanilla JavaScript plugin for lazyloading images.
+# For more information: https://apoorv.pro/lozad.js/demo/
+lazyload: true
+
+# Pangu Support
+# For more information: https://github.com/vinta/pangu.js
+# Server-side plugin: https://github.com/next-theme/hexo-pangu
+pangu: true
+
+# ---------------------------------------------------------------
+# Tags Settings
+# See: https://theme-next.js.org/docs/tag-plugins/
+# ---------------------------------------------------------------
+
+# Note tag (bootstrap callout)
+note:
+  # Note tag style values:
+  #  - simple    bootstrap callout old alert style. Default.
+  #  - modern    bootstrap callout new (v2-v3) alert style.
+  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+  #  - disabled  disable all CSS styles import of note tag.
+  style: simple
+  icons: true
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
+  light_bg_offset: -3
+
+# Tabs tag
+tabs:
+  # Make the nav bar of tabs with long content stick to the top.
+  sticky: false
+  transition:
+    tabs: false
+    labels: true
+
+# PDF tag
+# NexT will try to load pdf files natively, if failed, pdf.js will be used.
+# So, you have to install the dependency of pdf.js if you want to use pdf tag and make it available to all browsers.
+# Dependencies: https://github.com/next-theme/theme-next-pdf
+pdf:
+  enable: true
+  # Default height
+  height: 500px
+
+# Mermaid tag
+mermaid:
+  enable: true
+  # Available themes: default | dark | forest | neutral
+  theme:
+    light: default
+    dark: dark
+
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+
+# Use Animate.css to animate everything.
+# For more information: https://animate.style
+motion:
+  enable: true
+  async: true
+  transition:
+    # All available transition variants: https://theme-next.js.org/animate/
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    # Only for Pisces | Gemini.
+    sidebar: fadeInUp
+
+# Progress bar in the top during page loading.
+# For more information: https://github.com/CodeByZach/pace
+pace:
+  enable: true
+  # All available colors:
+  # black | blue | green | orange | pink | purple | red | silver | white | yellow
+  color: purple
+  # All available themes:
+  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+  theme: center-atom
+
+# Canvas ribbon
+# For more information: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: true
+  size: 300 # The width of the ribbon
+  alpha: 0.6 # The transparency of the ribbon
+  zIndex: -1 # The display level of the ribbon

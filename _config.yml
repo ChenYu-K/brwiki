@@ -105,3 +105,6 @@ deploy:
   type: git
   repo: https://github.com/ChenYu-K/bridgewiki.git
   branch: master
+
+plugins:
+  - hexo-reference

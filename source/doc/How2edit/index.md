@@ -8,7 +8,6 @@ coauthor:
 
 {% cq %} Hexo/Markdown 書き方 {% endcq %}
 
-
 # まとめ
 まず，簡単でまとめると．
 
@@ -77,6 +76,7 @@ Htmlコードも使える．
 
 ![](./pic/eg-1.png)
 
+
 {% note info %}　他のフォルダ内，あるいはwebsiteのグラフを引用する時，絶対位置を使うのは望ましい．例えば，{% endnote %}
 
 `![](/doc/How2edit/pic/example.jpg)` |`![](https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/logo/example.jpg)`
@@ -84,6 +84,15 @@ Htmlコードも使える．
 | ![](/doc/How2edit/pic/example.jpg) | ![](https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/logo/example.jpg) |
 
 >? Local絶対位置を引用する時，本サイトのルートディレクトリは`./source`なので，絶対位置の引用は`source`以降のフォルダからスタート.
+
+<!-- {% gp 6-6 %}
+![](/doc/How2edit/pic/example.jpg) 
+![](/doc/How2edit/pic/example.jpg) 
+![](/doc/How2edit/pic/example.jpg) 
+![](/doc/How2edit/pic/example.jpg) 
+![](/doc/How2edit/pic/example.jpg) 
+![](/doc/How2edit/pic/example.jpg) 
+{% endgp %} -->
 
 ## 表の作り方
 

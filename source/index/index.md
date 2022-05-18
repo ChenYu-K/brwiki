@@ -5,11 +5,10 @@ tags:
 ---
 
 {% note info %}
-<i class="fas fa-cog fa-spin"></i> 構築中，ほしい機能がございましたら連絡してください．
+<i class="fas fa-cog fa-spin"></i> 構築中
 {% endnote %}
 
 # 便利帳Index
----
 橋梁研データベースの利用便利帳
 
 <i class="fas fa-home" style="color: #339af0;"></i> [橋梁研HP](http://brdg.civil.eng.osaka-cu.ac.jp/index.html)  
@@ -34,14 +33,13 @@ tags:
 
 
 # データベース
----
 
 データベース：
  [nas_sy21](http://10.108.51.13:7000/) のサイトバージョン
-- 古い学生フォルダ：\\ts5410d285\usbdisk1
-- Scandata: \\nas_sy21\scandata
-- 2014-2018年度卒―解析データ： \\BRABQ8\h
-- 2019年度以降―解析データ：\\BRABQ7\f
+- 古い学生フォルダ：`\\ts5410d285\usbdisk1`
+- Scandata: `\\nas_sy21\scandata`
+- 2014-2018年度卒―解析データ： `\\BRABQ8\h`
+- 2019年度以降―解析データ：`\\BRABQ7\f`
 
 # 解析
 ---
@@ -60,9 +58,7 @@ Abaqus license check:
 abaqus licensing dslsstat -usage
 ```
 
-# 実験
----
-
+~~# 実験~~
 
 # その他
 SourceCode: \\nas_sy21\web\wiki

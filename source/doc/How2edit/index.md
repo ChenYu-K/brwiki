@@ -2,8 +2,7 @@
 title: 本サイトの編集のやり方
 date: 2022-05-05 11:10:11
 tags: Markdown
-coauthor: 
-    - Chen Yu
+coauthor: Chen Yu
 ---
 
 {% cq %} Hexo/Markdown 書き方 {% endcq %}
@@ -83,15 +82,6 @@ Htmlコードも使える．
 
 >? Local絶対位置を引用する時，本サイトのルートディレクトリは`./source`なので，絶対位置の引用は`source`以降のフォルダからスタート.
 
-<!-- {% gp 6-6 %}
-![](/doc/How2edit/pic/example.jpg) 
-![](/doc/How2edit/pic/example.jpg) 
-![](/doc/How2edit/pic/example.jpg) 
-![](/doc/How2edit/pic/example.jpg) 
-![](/doc/How2edit/pic/example.jpg) 
-![](/doc/How2edit/pic/example.jpg) 
-{% endgp %} -->
-
 ## 表の作り方
 
 ```md
@@ -117,7 +107,8 @@ Htmlコードも使える．
 {% label class_name@text %}
 ```
 
-**例えば:**
+**例えば:**    
+
 |Code|Example|
 |:---:|:---:|
 |```{% label @テキスト %}```|{% label @テキスト %}|

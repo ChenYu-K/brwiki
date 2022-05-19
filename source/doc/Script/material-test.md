@@ -3,7 +3,7 @@ title: Material_test-data-processing
 date: 2021-11-24 18:23:25
 tags: python
 coauthor: yu chen
-katex: true
+mathjax: true
 ---
 
 # 材料試験自動データ処理

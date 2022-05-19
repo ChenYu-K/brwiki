@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Microsoft Visio、SVG Export により生成 example-corrcoef.svg DIC -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="3.61755in" height="1.84376in"
+		viewBox="0 0 260.463 132.751" xml:space="preserve" color-interpolation-filters="sRGB" class="st10">
+	<v:documentProperties v:langID="1041" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#3f3f3f;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:url(#ptrn2-38);shape-rendering:crispEdges;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st6 {fill:#000000;font-family:メイリオ;font-size:1.00001em}
+		.st7 {font-size:1em}
+		.st8 {fill:#000000;font-family:Segoe UI;font-size:1.00001em}
+		.st9 {font-family:Segoe UI;font-size:1em}
+		.st10 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<pattern id="ptrn2-38" v:fillPattern="2" v:foreground="#ffffff" v:background="#ffffff" patternUnits="userSpaceOnUse"
+				width="6" height="6" viewBox="0 0 64 64">
+			<image x="0" y="0" width="64" height="64" image-rendering="optimizeSpeed"
+					xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAARSURBVChTY/hPAIwIBf//AwCEtf8BmLK6XAAAAABJRU5ErkJggg=="/>
+		</pattern>
+	</defs>
+	<g v:mID="4" v:index="2" v:groupContext="foregroundPage">
+		<title>DIC</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape1085-1" v:mID="1085" v:groupContext="shape" transform="translate(0.992126,-0.992126)">
+			<title>シート.1085</title>
+			<rect x="0" y="0.992126" width="263.622" height="131.758" class="st1"/>
+		</g>
+		<g id="group1009-3" transform="translate(17.726,-89.8559)" v:mID="1009" v:groupContext="group">
+			<title>シート.1009</title>
+			<g id="shape1000-4" v:mID="1000" v:groupContext="shape">
+				<title>シート.1000</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1001-6" v:mID="1001" v:groupContext="shape" transform="translate(-4.29656E-14,-14.1732)">
+				<title>シート.1001</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1002-8" v:mID="1002" v:groupContext="shape" transform="translate(-4.29656E-14,-28.3465)">
+				<title>シート.1002</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1003-10" v:mID="1003" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1003</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1004-12" v:mID="1004" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1004</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1005-14" v:mID="1005" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1005</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1006-16" v:mID="1006" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1006</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1007-18" v:mID="1007" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1007</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1008-20" v:mID="1008" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1008</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+		</g>
+		<g id="group1010-22" transform="translate(104.183,-89.8559)" v:mID="1010" v:groupContext="group">
+			<title>シート.1010</title>
+			<g id="shape1011-23" v:mID="1011" v:groupContext="shape">
+				<title>シート.1011</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1012-25" v:mID="1012" v:groupContext="shape" transform="translate(-4.29656E-14,-14.1732)">
+				<title>シート.1012</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1013-27" v:mID="1013" v:groupContext="shape" transform="translate(-4.29656E-14,-28.3465)">
+				<title>シート.1013</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1014-29" v:mID="1014" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1014</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1015-31" v:mID="1015" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1015</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1016-33" v:mID="1016" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1016</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1017-35" v:mID="1017" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1017</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st3"/>
+			</g>
+			<g id="shape1018-39" v:mID="1018" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1018</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1019-41" v:mID="1019" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1019</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+		</g>
+		<g id="group1020-43" transform="translate(160.876,-89.8559)" v:mID="1020" v:groupContext="group">
+			<title>シート.1020</title>
+			<g id="shape1021-44" v:mID="1021" v:groupContext="shape">
+				<title>シート.1021</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1022-46" v:mID="1022" v:groupContext="shape" transform="translate(-4.29656E-14,-14.1732)">
+				<title>シート.1022</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1023-48" v:mID="1023" v:groupContext="shape" transform="translate(-4.29656E-14,-28.3465)">
+				<title>シート.1023</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1024-50" v:mID="1024" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1024</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1025-52" v:mID="1025" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1025</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1026-54" v:mID="1026" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1026</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1027-56" v:mID="1027" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1027</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1028-58" v:mID="1028" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1028</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1029-60" v:mID="1029" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1029</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+		</g>
+		<g id="group1030-62" transform="translate(217.569,-89.8559)" v:mID="1030" v:groupContext="group">
+			<title>シート.1030</title>
+			<g id="shape1031-63" v:mID="1031" v:groupContext="shape">
+				<title>シート.1031</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1032-65" v:mID="1032" v:groupContext="shape" transform="translate(-4.29656E-14,-14.1732)">
+				<title>シート.1032</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1033-67" v:mID="1033" v:groupContext="shape" transform="translate(-4.29656E-14,-28.3465)">
+				<title>シート.1033</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1034-69" v:mID="1034" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1034</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1035-71" v:mID="1035" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1035</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+			</g>
+			<g id="shape1036-73" v:mID="1036" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1036</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1037-75" v:mID="1037" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1037</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st2"/>
+			</g>
+			<g id="shape1038-77" v:mID="1038" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1038</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+			</g>
+			<g id="shape1039-79" v:mID="1039" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1039</title>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+			</g>
+		</g>
+		<g id="shape1040-81" v:mID="1040" v:groupContext="shape" transform="translate(0.375,-1.41492)">
+			<title>シート.1040</title>
+			<desc>テンプレート 画像</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.5653" cy="118.294" width="81.14" height="28.9134"/>
+			<rect x="0" y="103.837" width="81.1306" height="28.9134" class="st5"/>
+			<text x="4.57" y="114.33" class="st6" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>テンプレート<v:newlineChar/><tspan
+						x="28.57" dy="1.323em" class="st7">画像</tspan></text>		</g>
+		<g id="group1051-85" transform="translate(17.726,-41.6669)" v:mID="1051" v:groupContext="group">
+			<title>シート.1051</title>
+			<g id="shape1042-86" v:mID="1042" v:groupContext="shape">
+				<title>シート.1042</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1043-89" v:mID="1043" v:groupContext="shape" transform="translate(-1.19904E-14,-14.1732)">
+				<title>シート.1043</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1044-92" v:mID="1044" v:groupContext="shape" transform="translate(-1.19904E-14,-28.3465)">
+				<title>シート.1044</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1045-95" v:mID="1045" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1045</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1046-98" v:mID="1046" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1046</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1047-101" v:mID="1047" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1047</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1048-104" v:mID="1048" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1048</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1049-107" v:mID="1049" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1049</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1050-110" v:mID="1050" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1050</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+		</g>
+		<g id="group1052-113" transform="translate(104.183,-41.6669)" v:mID="1052" v:groupContext="group">
+			<title>シート.1052</title>
+			<g id="shape1053-114" v:mID="1053" v:groupContext="shape">
+				<title>シート.1053</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1054-117" v:mID="1054" v:groupContext="shape" transform="translate(-1.19904E-14,-14.1732)">
+				<title>シート.1054</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1055-120" v:mID="1055" v:groupContext="shape" transform="translate(-1.19904E-14,-28.3465)">
+				<title>シート.1055</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1056-123" v:mID="1056" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1056</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1057-126" v:mID="1057" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1057</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1058-129" v:mID="1058" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1058</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1059-132" v:mID="1059" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1059</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1060-135" v:mID="1060" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1060</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1061-138" v:mID="1061" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1061</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+		</g>
+		<g id="group1062-141" transform="translate(160.876,-41.6669)" v:mID="1062" v:groupContext="group">
+			<title>シート.1062</title>
+			<g id="shape1063-142" v:mID="1063" v:groupContext="shape">
+				<title>シート.1063</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1064-145" v:mID="1064" v:groupContext="shape" transform="translate(-1.19904E-14,-14.1732)">
+				<title>シート.1064</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1065-148" v:mID="1065" v:groupContext="shape" transform="translate(-1.19904E-14,-28.3465)">
+				<title>シート.1065</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1066-151" v:mID="1066" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1066</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1067-154" v:mID="1067" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1067</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1068-157" v:mID="1068" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1068</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1069-160" v:mID="1069" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1069</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1070-163" v:mID="1070" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1070</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1071-166" v:mID="1071" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1071</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+		</g>
+		<g id="group1072-169" transform="translate(217.569,-41.6669)" v:mID="1072" v:groupContext="group">
+			<title>シート.1072</title>
+			<g id="shape1073-170" v:mID="1073" v:groupContext="shape">
+				<title>シート.1073</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1074-173" v:mID="1074" v:groupContext="shape" transform="translate(-1.19904E-14,-14.1732)">
+				<title>シート.1074</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1075-176" v:mID="1075" v:groupContext="shape" transform="translate(-1.19904E-14,-28.3465)">
+				<title>シート.1075</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1076-179" v:mID="1076" v:groupContext="shape" transform="translate(14.1732,-1.7053E-13)">
+				<title>シート.1076</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1077-182" v:mID="1077" v:groupContext="shape" transform="translate(14.1732,-14.1732)">
+				<title>シート.1077</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1078-185" v:mID="1078" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+				<title>シート.1078</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1079-188" v:mID="1079" v:groupContext="shape" transform="translate(28.3465,-5.32152E-07)">
+				<title>シート.1079</title>
+				<desc>1</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>1</text>			</g>
+			<g id="shape1080-191" v:mID="1080" v:groupContext="shape" transform="translate(28.3465,-14.1732)">
+				<title>シート.1080</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st1"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+			<g id="shape1081-194" v:mID="1081" v:groupContext="shape" transform="translate(28.3465,-28.3465)">
+				<title>シート.1081</title>
+				<desc>0</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="7.08661" cy="125.664" width="14.18" height="14.1732"/>
+				<rect x="0" y="118.577" width="14.1732" height="14.1732" class="st4"/>
+				<text x="4" y="129.26" class="st8" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>0</text>			</g>
+		</g>
+		<g id="shape1082-197" v:mID="1082" v:groupContext="shape" transform="translate(104.183,-1.69839)">
+			<title>シート.1082</title>
+			<desc>画像A r=0.5</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="21.2598" cy="118.294" width="42.52" height="28.9134"/>
+			<rect x="0" y="103.837" width="42.5197" height="28.9134" class="st5"/>
+			<text x="5.39" y="115.06" class="st6" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>画像<tspan class="st9">A<v:newlineChar/></tspan><tspan
+						x="7.3" dy="1.231em" class="st9" v:langID="1033">r=0.5</tspan></text>		</g>
+		<g id="shape1083-202" v:mID="1083" v:groupContext="shape" transform="translate(160.876,-1.41492)">
+			<title>シート.1083</title>
+			<desc>画像B r=1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="21.2598" cy="118.294" width="42.52" height="28.9134"/>
+			<rect x="0" y="103.837" width="42.5197" height="28.9134" class="st5"/>
+			<text x="5.82" y="115.06" class="st6" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>画像<tspan class="st9">B<v:newlineChar/></tspan><tspan
+						x="11.84" dy="1.231em" class="st9" v:langID="1033">r=1</tspan></text>		</g>
+		<g id="shape1084-207" v:mID="1084" v:groupContext="shape" transform="translate(217.569,-1.69839)">
+			<title>シート.1084</title>
+			<desc>画像C r=0.19</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="21.2598" cy="118.294" width="42.52" height="28.9134"/>
+			<rect x="0" y="103.837" width="42.5197" height="28.9134" class="st5"/>
+			<text x="5.54" y="115.06" class="st6" v:langID="1041"><v:paragraph v:horizAlign="1"/><v:tabList/>画像<tspan class="st9">C<v:newlineChar/></tspan><tspan
+						x="4.07" dy="1.231em" class="st9" v:langID="1033">r=0.19</tspan></text>		</g>
+	</g>
+</svg>

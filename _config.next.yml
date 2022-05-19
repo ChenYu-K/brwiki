@@ -39,8 +39,8 @@ menu:
       default: /abaqus-tips/ ||fas fa-laptop
       Bolt modeling research: /BMR.html ||fas fa-cogs
       サーバー計算の流れ: /abqcalculate.html ||fas fa-calculator
-    Experiment:
-      default: /Experiment/ ||fas fa-book
+    DIC:
+      default: /DIC/ ||fas fa-book
       # 材料試験: /Script/material_test.html
     Script:
       default: /Script/ ||fas fa-laptop-code

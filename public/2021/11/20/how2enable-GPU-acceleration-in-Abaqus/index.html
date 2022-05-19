@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../images/favicon.ico">
+  <link rel="mask-icon" href="../../../../images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="../../../../css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/purple/pace-theme-center-atom.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"brdg.civil.eng.osaka-cu.ac.jp","root":"/","images":"../../../../images","scheme":"Gemini","darkmode":true,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="../../../../js/config.js"></script>
+
+    <meta name="description" content="本記事はどうやって Nvidia CUDA [1]を活用し，ABAQUSの計算速度を速めるか紹介します．">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CUDAを用いてABAQUSの計算速度アップ方法">
+<meta property="og:url" content="http://brdg.civil.eng.osaka-cu.ac.jp/2021/11/20/how2enable-GPU-acceleration-in-Abaqus/index.html">
+<meta property="og:site_name" content="&lt;i class&#x3D;&quot;fas fa-dragon&quot;&gt;&lt;&#x2F;i&gt; BRWIKI">
+<meta property="og:description" content="本記事はどうやって Nvidia CUDA [1]を活用し，ABAQUSの計算速度を速めるか紹介します．">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.imgur.com/ylSk04C.png">
+<meta property="og:image" content="https://i.imgur.com/KgAsN7K.png">
+<meta property="og:image" content="https://i.imgur.com/xEUpwAm.png">
+<meta property="og:image" content="https://i.imgur.com/6Ui3AIK.png">
+<meta property="og:image" content="https://i.imgur.com/WZRgoEt.png">
+<meta property="article:published_time" content="2021-11-20T06:01:24.000Z">
+<meta property="article:modified_time" content="2021-12-01T14:44:43.939Z">
+<meta property="article:author" content="Bridge Engineering Lab.">
+<meta property="article:tag" content="Abaqus">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/ylSk04C.png">
+
+
+<link rel="canonical" href="http://brdg.civil.eng.osaka-cu.ac.jp/2021/11/20/how2enable-GPU-acceleration-in-Abaqus/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://brdg.civil.eng.osaka-cu.ac.jp/2021/11/20/how2enable-GPU-acceleration-in-Abaqus/","path":"2021/11/20/how2enable-GPU-acceleration-in-Abaqus/","title":"CUDAを用いてABAQUSの計算速度アップ方法"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>CUDAを用いてABAQUSの計算速度アップ方法 | <i class="fas fa-dragon"></i> BRWIKI</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="../../../../css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title"><i class="fas fa-dragon"></i> BRWIKI</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Welcom to brwiki</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-index"><a href="../../../../index/" rel="section"><i class="fa fa-home fa-fw"></i>Index</a></li><li class="menu-item menu-item-archives"><a href="../../../../archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">7</span></a></li><li class="menu-item menu-item-documentation"><a href="../../../../doc/" rel="section"><i class="fa fa-book fa-fw"></i>Documentation</a></li><li class="menu-item menu-item-tags"><a href="../../../../tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">3</span></a></li><li class="menu-item menu-item-about"><a href="../../../../about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-schedule"><a href="../../../../schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%83%9C%E3%83%BC%E3%83%89%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">1.</span> <span class="nav-text">グラフィックボードのインストール</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%83%9C%E3%83%BC%E3%83%89%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%83%BC%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">2.</span> <span class="nav-text">グラフィックボードドライバーのインストール</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#cuda%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="nav-number">3.</span> <span class="nav-text">CUDAツールをインストール</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pc%E3%81%AE%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A"><span class="nav-number">4.</span> <span class="nav-text">PCの環境設定</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B4%E6%8E%A5%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B"><span class="nav-number">4.1.</span> <span class="nav-text">直接環境変数を編集する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%82%82%E3%81%86%E4%B8%80%E3%81%A4%E6%96%B9%E6%B3%95%E3%81%AFabaqus_v6.env-%E3%82%92%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B"><span class="nav-number">4.2.</span> <span class="nav-text">もう一つ方法はabaqus_v6.env を編集する</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%83%9C%E3%83%BC%E3%83%89%E3%81%8C%E6%AD%A3%E3%81%97%E3%81%8F%E9%81%A9%E7%94%A8%E3%81%A7%E3%81%8D%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AE%E3%81%8B%E3%82%92%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B"><span class="nav-number">5.</span> <span class="nav-text">グラフィックボードが正しく適用できているのかをチェックする</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#reference"><span class="nav-number">6.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Bridge Engineering Lab."
+      src="../../../../images/ocubridgelogo_wh.png">
+  <p class="site-author-name" itemprop="name">Bridge Engineering Lab.</p>
+  <div class="site-description" itemprop="description">Bridge lab. database</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="../../../../archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="../../../../tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ChenYu-K/bridgewiki" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ChenYu-K&#x2F;bridgewiki" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="../../../../chin@brdg.civil.eng.osaka-cu.ac.jp" title="E-Mail → chin@brdg.civil.eng.osaka-cu.ac.jp"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/omukyoryoken" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;omukyoryoken" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/omu_bridge/" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;omu_bridge&#x2F;" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ja" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      大阪市立大学橋梁工学研究室HP
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://brdg.civil.eng.osaka-cu.ac.jp/" title="http:&#x2F;&#x2F;brdg.civil.eng.osaka-cu.ac.jp&#x2F;">Site</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://brdg.civil.eng.osaka-cu.ac.jp/2021/11/20/how2enable-GPU-acceleration-in-Abaqus/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="../../../../images/ocubridgelogo_wh.png">
+      <meta itemprop="name" content="Bridge Engineering Lab.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="<i class="fas fa-dragon"></i> BRWIKI">
+      <meta itemprop="description" content="Bridge lab. database">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="CUDAを用いてABAQUSの計算速度アップ方法 | <i class="fas fa-dragon"></i> BRWIKI">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CUDAを用いてABAQUSの計算速度アップ方法<a href="https://github.com/ChenYu-K/brwiki/tree/master/source/_posts/how2enable-GPU-acceleration-in-Abaqus.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pen-nib"></i></a>
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-11-20 15:01:24" itemprop="dateCreated datePublished" datetime="2021-11-20T15:01:24+09:00">2021-11-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2021-12-01 23:44:43" itemprop="dateModified" datetime="2021-12-01T23:44:43+09:00">2021-12-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本記事はどうやって <a target="_blank" rel="noopener" href="https://developer.nvidia.com/zh-cn/cuda-toolkit">Nvidia CUDA</a> <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Nvidia Cuda は`RTX` or `Quardo`の計算カードを使えるのですが，一般的に `Geforce`　のようなゲーミングカードはお勧めしません．効果が小さいです．  
+">[1]</span></a></sup>を活用し，ABAQUSの計算速度を速めるか紹介します．</p>
+<span id="more"></span>
+<h1 id="グラフィックボードのインストール">グラフィックボードのインストール</h1>
+<p>グラフィックボードを購入する前に，　　 予め，グラフィックボードとマザーボードあるいはCPUの相性を調べることが大事です。</p>
+<p>今回購入したのはNvidiaさんが 2021　新しい発売した　RTX A4000<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[グラフィックボードの紹介](https://www.nvidia.com/en-us/design-visualization/rtx-a4000/) 
+">[2]</span></a></sup>です。　　 グラフィックボードの詳細<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[A4000の規格](https://www.nvidia.cn/content/dam/en-zz/Solutions/gtcs21/rtx-a4000/nvidia-rtx-a4000-datasheet.pdf)
+">[3]</span></a></sup>は簡単にまとめると以下に示す通りです．</p>
+<table>
+<thead>
+<tr class="header">
+<th>GPU特性</th>
+<th>RTX A000</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GPUメモリ</td>
+<td>ECC付き DDR6 16GB</td>
+</tr>
+<tr class="even">
+<td>メモリ帯域幅</td>
+<td>448GB/s</td>
+</tr>
+<tr class="odd">
+<td>システムインタフェース</td>
+<td>PCI-E X16</td>
+</tr>
+<tr class="even">
+<td>CUDAコア数</td>
+<td>6144</td>
+</tr>
+<tr class="odd">
+<td>単精度浮動計算速度</td>
+<td>19.2 TFLOPS</td>
+</tr>
+</tbody>
+</table>
+<p>インストール手順 1. ソケットにちゃんと差し込んで 2. グラフィックボードの電源を接続して（　RTX A4000の場合は 6Pinの電源ソケット） 3. パソコンを起動し，確認する．</p>
+<h1 id="グラフィックボードドライバーのインストール">グラフィックボードドライバーのインストール</h1>
+<p>ドライバーは<a target="_blank" rel="noopener" href="https://www.nvidia.co.jp/Download/index.aspx?lang=jp">Nvida公式サイト</a>でダウンロード出来ます．　　 自分のグラフィックボードに合うドライバーをダウンロードし，インストールします。　　 そして再起動します． <img data-src="https://i.imgur.com/ylSk04C.png" /></p>
+<h1 id="cudaツールをインストール">CUDAツールをインストール</h1>
+<p>CUDAツールがないと，CUDAの機能が使えないので 必ずCUDAツールをインストールしなければならない．</p>
+<p><a target="_blank" rel="noopener" href="https://developer.nvidia.com/zh-cn/cuda-toolkit">CUDAツールインストールURL</a></p>
+<p><img data-src="https://i.imgur.com/KgAsN7K.png" /></p>
+<div class="note info"><p>CUDAツールのインストール時間が結構長いので，慌てずこれは通常状態です．</p>
+</div>
+<h1 id="pcの環境設定">PCの環境設定</h1>
+<p>CUDAを設定する方法を2つ紹介します．</p>
+<h2 id="直接環境変数を編集する">直接環境変数を編集する</h2>
+<p>環境変数の設定は→システム→システムの詳細設定 環境変数の<code>システム環境変数</code>に以下の内容を新規追加します:</p>
+<table>
+<thead>
+<tr class="header">
+<th>環境変数</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>変数名</td>
+<td><code>ABA_ACCELERATOR_TYPE</code></td>
+</tr>
+<tr class="even">
+<td>変数値</td>
+<td><code>PLATFORM_CUDA</code></td>
+</tr>
+</tbody>
+</table>
+<p><img data-src="https://i.imgur.com/xEUpwAm.png" /></p>
+<h2 id="もう一つ方法はabaqus_v6.env-を編集する">もう一つ方法は<code>abaqus_v6.env</code> を編集する</h2>
+<p><code>abaqus_v6.env</code><sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="`abaqus_v6.env`のパスは普通ここにあります`C:\SIMULIA\EstProducts\2020\win_b64\SMA\site`
+">[4]</span></a></sup>の末尾に以下の内容を追加することで， <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">os.environ[&quot;ABA_ACCELERATOR_TYPE&quot;]=&quot;PLATFORM_CUDA&quot; # Nvidia</span><br></pre></td></tr></table></figure> CUDAを用いて加速機能を起動できます．</p>
+<p><img data-src="https://i.imgur.com/6Ui3AIK.png" /></p>
+<h1 id="グラフィックボードが正しく適用できているのかをチェックする">グラフィックボードが正しく適用できているのかをチェックする</h1>
+<p>正しくグラフィックボードが適用出来ていれば，ログの中に以下に示すような適用成功のフィードバックが見えます． <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">USING ACCELERATOR PLATFORM_CUDA</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p><img data-src="https://i.imgur.com/WZRgoEt.png" /></p>
+<h1 id="reference">Reference</h1>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Nvidia Cuda は<code>RTX</code> or <code>Quardo</code>の計算カードを使えるのですが，一般的に <code>Geforce</code>　のようなゲーミングカードはお勧めしません．効果が小さいです．<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.nvidia.com/en-us/design-visualization/rtx-a4000/">グラフィックボードの紹介</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.nvidia.cn/content/dam/en-zz/Solutions/gtcs21/rtx-a4000/nvidia-rtx-a4000-datasheet.pdf">A4000の規格</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:4">
+<span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><code>abaqus_v6.env</code>のパスは普通ここにあります<code>C:\2020_b64</code><a href="#fnref:4" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Bridge Engineering Lab.
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://brdg.civil.eng.osaka-cu.ac.jp/2021/11/20/how2enable-GPU-acceleration-in-Abaqus/" title="CUDAを用いてABAQUSの計算速度アップ方法">http://brdg.civil.eng.osaka-cu.ac.jp/2021/11/20/how2enable-GPU-acceleration-in-Abaqus/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/ja" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="../../../../tags/Abaqus/" rel="tag"><i class="fa fa-tag"></i> Abaqus</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="../../../10/30/abaqus-tips/" rel="prev" title="abaqus-tips">
+                  <i class="fa fa-chevron-left"></i> abaqus-tips
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="../../../../2022/05/11/hello-world/" rel="next" title="Welcom to BRWIKI">
+                  Welcom to BRWIKI <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fab fa-fort-awesome-alt"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bridge Engineering Lab.</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="../../../../js/comments.js"></script><script src="../../../../js/utils.js"></script><script src="../../../../js/motion.js"></script><script src="../../../../js/next-boot.js"></script><script src="../../../../js/pjax.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="../../../../js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.7/pdfobject.min.js","integrity":"sha256-ph3Dk89VmuTVXG6x/RDzk53SU9LPdAh1tpv0UvnDZ2I="},"url":"../../../../lib/pdf/web/viewer.html"}</script>
+  <script src="../../../../js/third-party/tags/pdf.js"></script>
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdn.jsdelivr.net/npm/mermaid@9.0.1/dist/mermaid.min.js","integrity":"sha256-CemUs9ITT7liCZpVMktcEw0BpAOZ1+mujlMB3UyuImU="}}</script>
+  <script src="../../../../js/third-party/tags/mermaid.js"></script>
+
+
+  <script src="../../../../js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="../../../../js/third-party/math/mathjax.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"http://brdg.civil.eng.osaka-cu.ac.jp/2021/11/20/how2enable-GPU-acceleration-in-Abaqus/"}</script>
+  <script src="../../../../js/third-party/quicklink.js"></script>
+
+</body>
+</html>

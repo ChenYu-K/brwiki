@@ -4,3 +4,4 @@ Thumbs.db
 .deploy*/
 node_modules/
 public/
+db.json

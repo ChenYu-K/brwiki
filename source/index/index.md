@@ -68,3 +68,13 @@ SourceCode: \\nas_sy21\web\wiki
 電話集荷：　
 
 ![](/pic/yamato.png)
+
+## bridge
+
+[有名な橋](https://upload.wikimedia.org/wikipedia/commons/3/37/Comparison_of_notable_bridges_SMIL.svg)のまとめ[^1]
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/37/Comparison_of_notable_bridges_SMIL.svg)
+
+
+
+[^1]: Main Page. (2022, April 26). Wikimedia Commons, the free media repository. Retrieved 07:56, May 20, 2022 from [https://commons.wikimedia.org](https://commons.wikimedia.org/w/index.php?title=Main_Page&oldid=651894909).

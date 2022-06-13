@@ -4,24 +4,22 @@ date: 2021-10-20 18:20:04
 tags:
 ---
 
-{% note info %}
-<i class="fas fa-cog fa-spin"></i> 構築中
+{% note warning %}
+<i class="fas fa-cog fa-spin"></i> Brdgメールのセキュリティ問題が解決不可能なので(大学の方針と違う)，現在brdgメールサーバーを廃棄する方向でうごいています-2022.6.10-chen。
 {% endnote %}
 
 # 便利帳Index
 橋梁研データベースの利用便利帳
 
-<i class="fas fa-home" style="color: #339af0;"></i> [橋梁研HP](http://brdg.civil.eng.osaka-cu.ac.jp/index.html)  
-<i class="fas fa-dove" style="color: #057bce;"></i>[desknet's NEO](https://bridge-ocu.dn-cloud.com/cgi-bin/dneo/dneo.cgi?cmd=schindex#cmd=schmonth&date=20211104&id=7)  
-
-[<img style="margin: auto;" src="https://img.shields.io/badge/In-%E7%A0%94%E7%A9%B6%E5%AE%A4%E5%85%A5%E5%AE%A4-blue?logo=CoffeeScript" width=20% height=15% >](http://ocu.jp/s/GIjPszuU)
-[<img style="margin: auto;" src="https://img.shields.io/badge/Out-%E7%A0%94%E7%A9%B6%E5%AE%A4%E9%80%80%E5%AE%A4-red?logo=Datadog" width=20% height=20% >](http://ocu.jp/l/LTR0007)
-
 > 橋梁研住所：〒558-8585, C309, 3-3-138 Sugimoto Sumiyoshi-ku, OSAKA, Japan
 電話番号：06-6605-2765
 
+<i class="fas fa-home" style="color: #339af0;"></i> [橋梁研HP](http://brdg.civil.eng.osaka-cu.ac.jp/index.html)  
+<i class="fas fa-dove" style="color: #057bce;"></i>[desknet's NEO](https://bridge-ocu.dn-cloud.com/cgi-bin/dneo/dneo.cgi?cmd=schindex#cmd=schmonth&date=20211104&id=7)  
+
 <!-- <button type="button">Click Me!</button> -->
 - <i class="far fa-folder-open"></i> [ファイル共有システム](http://brdg.civil.eng.osaka-cu.ac.jp/filePublisher/login.php)
+- <i class="far fa-folder-open"></i> [**新**ファイル共有システムOMU](https://webdav.ecs.osaka-cu.ac.jp/proself/) ☞ 使い方はこちら
 - <i class="fas fa-school"></i> [教室予約システム](https://www.r326.com/b/main.aspx?g=rMSqVK3523reGnQ80)  (Password:`toshi`)
 - <i class="fas fa-cog"></i> [アムスラー予約システム](https://www.r326.com/b/main.aspx?g=8YB015ird1oUonNH1)
 - <i class="fas fa-plug"></i> [OMU障害/メンテナンス情報](https://e.omu.ac.jp/announce/)
@@ -35,12 +33,12 @@ tags:
 # データベース
 
 データベース：
- [nas_sy21](http://10.108.51.13:7000/) のサイトバージョン
-- 古い学生フォルダ：`\\ts5410d285\usbdisk1`
-- Scandata: `\\nas_sy21\scandata`
-- 2014-2018年度卒―解析データ： `\\BRABQ8\h`
-- 2019年度以降―解析データ：`\\BRABQ7\f`
-
+ [nas_sy21](http://10.108.51.13:7000/) のサイトバージョン  
+- 古い学生フォルダ：`\\ts5410d285\usbdisk1`  
+- Scandata: `\\nas_sy21\scandata`  
+- 2014-2018年度卒―解析データ： `\\BRABQ8\h`  
+- 2019年度以降―解析データ：`\\BRABQ7\f`  
+  
 # 解析
 ---
 ![](/images/caelisence.png)  
@@ -49,19 +47,37 @@ tags:
 
 
 
-☞[解析に関するTIPS](/2021/10/30/abaqus-tips/)
-☞[高力ボルト摩擦接合継手モデリングガイドライン](https://cdn.jsdelivr.net/gh/ChenYu-K/brwiki@master/source/doc/BMR_V1.pdf)
-☞[Abaqus_Documentation](https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/sim-r-DSDocAbaqus.htm?ContextScope=all)
+☞[解析に関するTIPS](/2021/10/30/abaqus-tips/)  
+☞[高力ボルト摩擦接合継手モデリングガイドライン](https://cdn.jsdelivr.net/gh/ChenYu-K/brwiki@master/source/doc/BMR_V1.pdf)  
+☞[Abaqus_Documentation](https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/sim-r-DSDocAbaqus.htm?ContextScope=all)  
 
 Abaqus license check:
 ```txt
 abaqus licensing dslsstat -usage
 ```
 
-~~# 実験~~
+# 学会日程
+
+|Conference name|State|Key dates|
+|----|--|--------|
+|[EASEC-17-Singapore2022](https://easec-17.org/)|開催|27-30 June 2022   (NEXT WAS 2024)|
+|[IABMAS-Spain2022](https://congress.cimne.com/iabmas2022/frontal/dates.asp)|開催|11-15 July 2022|
+|[SHMII-11-Montreal 2022](https://sites.events.concordia.ca/sites/shmii/en/shmii-11-montreal-2022/)|開催| 8-12 August, 2022|
+|[日独-OCU]()|?| 開催時間: 30 August, 2022 |
+|[土木学会全国大会](https://zenkokutaikai.jsce.or.jp/2022/)|開催|9/15-16, 2022　京都大学|
+|[IABSE-Nanjing2022](https://iabse.org/Events/Nanjing-2022/Technical-Programme)|大会登録| Final Invitation and Registration Open: June 10, 2022|
+|[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs投稿中|Call for Abstracts opens: **20 June 2022**|
+|[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Abs投稿中|Abstract submission: **19 August, 2022**|
+|[IABMAS-Denmark2024](http://www.f.waseda.jp/akiyama617/rIABMAS/conference.html)|予定|Abstract投稿: May ,2023|
+|Other|||
+|PCSS|3年一度|Pacific Structural Steel Conference|
+|ICSCS|3年一度|International Conference on Steel and Compsosite Structures|
+|ISSS-2024|2年一度|International Symposium on Steel Structures |
 
 # その他
-SourceCode: \\nas_sy21\web\wiki
+
+SourceCode: \\nas_sy21\web\wiki  
+
 ## ヤマト集荷
 
 [オンライン集荷](https://shuka.kuronekoyamato.co.jp/shuka_req/TopAction_doInit.action?portal=top&ref=portal_A1c%3D)

@@ -38,13 +38,28 @@ tags:
 - Scandata: `\\nas_sy21\scandata`  
 - 2014-2018年度卒―解析データ： `\\BRABQ8\h`  
 - 2019年度以降―解析データ：`\\BRABQ7\f`  
-  
-# 解析
----
+
+# 解析  
+
 ![](/images/caelisence.png)  
 
 ![](/images/lisence.png)
 
+## 解析流すルール
+
+|License|Number|Total|
+|---|---|---|
+76| 3| 228|
+50| 3| 50|
+120| 2| 240|
+Total|7|568|
+
+{% note info %}
+- ライセンス120は，BRABQ9，BRABQ10で流す．  
+- 1つのBRAEQで流していい解析は2つまで．  
+- 1つのBRABQで流していいライセンス120は1つまで．  
+- データチェック用にライセンス50は残しておく
+{% endnote %}
 
 
 ☞[解析に関するTIPS](/2021/10/30/abaqus-tips/)  
@@ -60,16 +75,18 @@ abaqus licensing dslsstat -usage
 
 |Conference name|State|Key dates|
 |----|--|--------|
-|[EASEC-17-Singapore2022](https://easec-17.org/)|開催|27-30 June 2022   (NEXT WAS 2024)|
+|現在プログラム進行中|||
+|[EASEC-17-Singapore2022](https://easec-17.org/)|開催|27-30 June 2022   (NEXT Is 2024)|
 |[IABMAS-Spain2022](https://congress.cimne.com/iabmas2022/frontal/dates.asp)|開催|11-15 July 2022|
 |[SHMII-11-Montreal 2022](https://sites.events.concordia.ca/sites/shmii/en/shmii-11-montreal-2022/)|開催| 8-12 August, 2022|
 |[日独-OCU]()|?| 開催時間: 30 August, 2022 |
 |[土木学会全国大会](https://zenkokutaikai.jsce.or.jp/2022/)|開催|9/15-16, 2022　京都大学|
-|[IABSE-Nanjing2022](https://iabse.org/Events/Nanjing-2022/Technical-Programme)|大会登録| Final Invitation and Registration Open: June 10, 2022|
-|[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs投稿中|Call for Abstracts opens: **20 June 2022**|
-|[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Abs投稿中|Abstract submission: **19 August, 2022**|
+|[IABSE-Nanjing2022](https://iabse.org/Events/Nanjing-2022/Technical-Programme)|大会登録中| Final Invitation and Registration Open: June 10, 2022|
+|会議受付中|||
+|[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs受付中|Call for Abstracts opens: **20 June 2022**|
+|[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Abs受付中|Abstract submission: **19 August, 2022**|
+|開催予定の会議|||
 |[IABMAS-Denmark2024](http://www.f.waseda.jp/akiyama617/rIABMAS/conference.html)|予定|Abstract投稿: May ,2023|
-|Other|||
 |PCSS|3年一度|Pacific Structural Steel Conference|
 |ICSCS|3年一度|International Conference on Steel and Compsosite Structures|
 |ISSS-2024|2年一度|International Symposium on Steel Structures |

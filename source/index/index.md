@@ -19,7 +19,7 @@ tags:
 
 <!-- <button type="button">Click Me!</button> -->
 - <i class="far fa-folder-open"></i> [ファイル共有システム](http://brdg.civil.eng.osaka-cu.ac.jp/filePublisher/login.php)
-- <i class="far fa-folder-open"></i> [**新**ファイル共有システムOMU](https://webdav.ecs.osaka-cu.ac.jp/proself/) ☞ 使い方はこちら
+- <i class="far fa-folder-open"></i> [**新**ファイル共有システムOMU](https://webdav.ecs.osaka-cu.ac.jp/proself/) ☞ 使い方は[こちら](https://info.ecs.osaka-cu.ac.jp/?page_id=4903)
 - <i class="fas fa-school"></i> [教室予約システム](https://www.r326.com/b/main.aspx?g=rMSqVK3523reGnQ80)  (Password:`toshi`)
 - <i class="fas fa-cog"></i> [アムスラー予約システム](https://www.r326.com/b/main.aspx?g=8YB015ird1oUonNH1)
 - <i class="fas fa-plug"></i> [OMU障害/メンテナンス情報](https://e.omu.ac.jp/announce/)
@@ -84,6 +84,7 @@ abaqus licensing dslsstat -usage
 |[IABSE-Nanjing2022](https://iabse.org/Events/Nanjing-2022/Technical-Programme)|大会登録中| Final Invitation and Registration Open: June 10, 2022|
 |会議受付中|||
 |[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs受付中|Call for Abstracts opens: **20 June 2022**|
+|[IALCCE-Milano-2023](https://ialcce2023.org/)|Abs受付中|Abstract Submission: **30 July, 2022**|
 |[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Abs受付中|Abstract submission: **19 August, 2022**|
 |開催予定の会議|||
 |[IABMAS-Denmark2024](http://www.f.waseda.jp/akiyama617/rIABMAS/conference.html)|予定|Abstract投稿: May ,2023|

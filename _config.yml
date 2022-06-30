@@ -103,7 +103,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/ChenYu-K/bridgewiki.git
+  repo: https://github.com/ChenYu-K/brwiki.git
   branch: master
 
 plugins:

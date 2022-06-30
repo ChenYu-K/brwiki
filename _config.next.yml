@@ -63,7 +63,7 @@ menu_settings:
   badges: true
 
 social:
-  GitHub: https://github.com/ChenYu-K/bridgewiki || fab fa-github
+  GitHub: https://github.com/ChenYu-K/brwiki || fab fa-github
   E-Mail: chin@brdg.civil.eng.osaka-cu.ac.jp || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
@@ -77,7 +77,7 @@ social:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/ocubridgelogo_wh.png
+  url: https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/svg/ocubridgelab.svg
   #/images/avatar.gif
   # If true, the avatar will be displayed in circle.
   rounded: true

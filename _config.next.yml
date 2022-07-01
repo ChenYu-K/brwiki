@@ -41,6 +41,7 @@ menu:
       サーバー計算の流れ: /abqcalculate.html ||fas fa-calculator
     DIC:
       default: /DIC/ ||fas fa-book
+      変位計測方法: /dic-disp.html ||fa-solid fa-camera
       # 材料試験: /Script/material_test.html
     Script:
       default: /Script/ ||fas fa-laptop-code

@@ -23,24 +23,23 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"brdg.civil.eng.osaka-cu.ac.jp","root":"/","images":"../../images","scheme":"Gemini","darkmode":true,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="../../js/config.js"></script>
 
-    <meta name="description" content="# 材料構成則 材料構成則とは 物体を構成する物質の力学的特性の数理的表現であり、個体や流流体を連続体に理想化した場合における力と変形との関係を 応力-ひずみ関係で表したもの. 弾性解析(材料線形) 応力集中を確認したい時などに使用することが多く，常時𝜎&#x3D;𝐸𝜀が成り立つ． 弾塑性解析(材料非線形) 降伏域の確認，塑性変形後の挙動を確認する場合等に適しており，降伏点以降のσ-ε関係">
+    <meta name="description" content="# 材料構成則 材料構成則とは 物体を構成する物質の力学的特性の数理的表現であり、個体や流流体を連続体に理想化した場合における力と変形との関係を 応力-ひずみ関係で表したもの. 弾性解析(材料線形) 応力集中を確認したい時などに使用することが多く，常時𝜎&#x3D;𝐸𝜀が成り立つ． 弾塑性解析(材料非線形) 降伏域の確認，塑性変形後の挙動を確認する場合等に適しており，降伏点以降のσ-ε関">
 <meta property="og:type" content="website">
 <meta property="og:title" content="abaqus-tips">
 <meta property="og:url" content="http://brdg.civil.eng.osaka-cu.ac.jp/doc/abaqus-tips/constitutive-equation-materials.html">
 <meta property="og:site_name" content="&lt;i class&#x3D;&quot;fas fa-dragon&quot;&gt;&lt;&#x2F;i&gt; BRWIKI">
-<meta property="og:description" content="# 材料構成則 材料構成則とは 物体を構成する物質の力学的特性の数理的表現であり、個体や流流体を連続体に理想化した場合における力と変形との関係を 応力-ひずみ関係で表したもの. 弾性解析(材料線形) 応力集中を確認したい時などに使用することが多く，常時𝜎&#x3D;𝐸𝜀が成り立つ． 弾塑性解析(材料非線形) 降伏域の確認，塑性変形後の挙動を確認する場合等に適しており，降伏点以降のσ-ε関係">
+<meta property="og:description" content="# 材料構成則 材料構成則とは 物体を構成する物質の力学的特性の数理的表現であり、個体や流流体を連続体に理想化した場合における力と変形との関係を 応力-ひずみ関係で表したもの. 弾性解析(材料線形) 応力集中を確認したい時などに使用することが多く，常時𝜎&#x3D;𝐸𝜀が成り立つ． 弾塑性解析(材料非線形) 降伏域の確認，塑性変形後の挙動を確認する場合等に適しており，降伏点以降のσ-ε関">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/stress.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/step0.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat1.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat2.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat3.png">
+<meta property="og:image" content="http://brdg.civil.eng.osaka-cu.ac.jp/pic/abaqus/materials/stress.png">
+<meta property="og:image" content="http://brdg.civil.eng.osaka-cu.ac.jp/pic/abaqus/materials/step0.png">
+<meta property="og:image" content="http://brdg.civil.eng.osaka-cu.ac.jp/pic/abaqus/materials/mat1.png">
+<meta property="og:image" content="http://brdg.civil.eng.osaka-cu.ac.jp/pic/abaqus/materials/mat2.png">
 <meta property="article:published_time" content="2021-10-29T16:10:11.000Z">
-<meta property="article:modified_time" content="2022-05-04T04:29:06.426Z">
+<meta property="article:modified_time" content="2022-07-01T05:12:29.461Z">
 <meta property="article:author" content="Bridge Engineering Lab.">
 <meta property="article:tag" content="abaqus">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/stress.png">
+<meta name="twitter:image" content="http://brdg.civil.eng.osaka-cu.ac.jp/pic/abaqus/materials/stress.png">
 
 
 <link rel="canonical" href="http://brdg.civil.eng.osaka-cu.ac.jp/doc/abaqus-tips/constitutive-equation-materials">
@@ -254,12 +253,14 @@
       <div class="post-body">
           <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="材料構成則"># 材料構成則</h2>
 <h2 id="材料構成則とは">材料構成則とは</h2>
-<p>物体を構成する物質の力学的特性の数理的表現であり、個体や流流体を連続体に理想化した場合における力と変形との関係を <strong>応力-ひずみ関係</strong>で表したもの.</p>
+<p>物体を構成する物質の力学的特性の数理的表現であり、個体や流流体を連続体に理想化した場合における力と変形との関係を
+<strong>応力-ひずみ関係</strong>で表したもの.</p>
 <h2 id="弾性解析材料線形">弾性解析(材料線形)</h2>
 <p>応力集中を確認したい時などに使用することが多く，常時𝜎=𝐸𝜀が成り立つ．</p>
 <h2 id="弾塑性解析材料非線形">弾塑性解析(材料非線形)</h2>
 <p>降伏域の確認，塑性変形後の挙動を確認する場合等に適しており，<strong>降伏点以降のσ-ε関係</strong>が重要．必要に応じて使い分ける.<br />
-実験の材料試験の結果を材料特性に入力する場合もある． (Excelシートからコピペ可能．実験の値は公称値で与えられる)</p>
+実験の材料試験の結果を材料特性に入力する場合もある．
+(Excelシートからコピペ可能．実験の値は公称値で与えられる)</p>
 <div class="note success"><h2 id="公称応力">公称応力</h2>
 <p>力を構造物の変形前の断面積で割って得られる応力</p>
 </div>
@@ -267,21 +268,33 @@
 <p>力を構造物の変形後の断面積で割って得られる応力.</p>
 </div>
 <figure>
-<img data-src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/stress.png" alt="stress" /><figcaption aria-hidden="true">stress</figcaption>
+<img data-src="../../pic/abaqus/materials/stress.png" alt="stress" />
+<figcaption aria-hidden="true">stress</figcaption>
 </figure>
 <p>abaqusでは真応力-真ひずみで構成則を入力しなければならない．</p>
 <figure>
-<img data-src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/step0.png" alt="機械的⇒塑性⇒金属塑性" /><figcaption aria-hidden="true">機械的⇒塑性⇒金属塑性</figcaption>
+<img data-src="../../pic/abaqus/materials/step0.png"
+alt="機械的⇒塑性⇒金属塑性" />
+<figcaption aria-hidden="true">機械的⇒塑性⇒金属塑性</figcaption>
 </figure>
-<h1 id="鋼材の構成則弾塑性解析の種類">鋼材の構成則(弾塑性解析)の種類</h1>
+<h1
+id="鋼材の構成則弾塑性解析の種類">鋼材の構成則(弾塑性解析)の種類</h1>
 <h2 id="バイリニア型">バイリニア型</h2>
-<p>レベル2地震動に対する耐震設計に際して，時刻歴応答解析に用いる構造用鋼材の構成則として最適 移動硬化則とともに適用されることが多い． （解析上の利便性を考慮して作成された） 塑性ひずみが5%の範囲までを再現できる．(鋼・合成構造標準示方書(総則編)より) 高力ボルトなどの高張力鋼で伸びが小さい材料に適している．</p>
-<h2 id="降伏棚のあるひずみ硬化型モデル">降伏棚のあるひずみ硬化型モデル</h2>
-<p>弾性域，降伏棚，ひずみ硬化を有する構成則． バイリニア型のものに比べて大きなひずみ領域まで適用できる．</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat1.png"></p>
+<p>レベル2地震動に対する耐震設計に際して，時刻歴応答解析に用いる構造用鋼材の構成則として最適
+移動硬化則とともに適用されることが多い．
+（解析上の利便性を考慮して作成された）
+塑性ひずみが5%の範囲までを再現できる．(鋼・合成構造標準示方書(総則編)より)
+高力ボルトなどの高張力鋼で伸びが小さい材料に適している．</p>
+<h2
+id="降伏棚のあるひずみ硬化型モデル">降伏棚のあるひずみ硬化型モデル</h2>
+<p>弾性域，降伏棚，ひずみ硬化を有する構成則．
+バイリニア型のものに比べて大きなひずみ領域まで適用できる．</p>
+<p><img data-src="../../pic/abaqus/materials/mat1.png" /></p>
 <h2 id="硬化則">硬化則</h2>
-<p>多くの材料の降伏条件は、荷重の履歴と塑性ひずみの変化に依存する． 荷重による降伏条件の変化は硬化と呼ばれ、硬化則とはこれを規定したものである．塑性ひずみの進展に伴う降伏曲面の変化の仕方により、弾塑性材料の性質を特徴付けることができる． (細かい話はゼミAで勉強してください)</p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat2.png"> <img data-src="https://cdn.jsdelivr.net/gh/ChenYu-K/bridgewiki@master/pic/abaqus/materials/mat3.png"></p>
+<p>多くの材料の降伏条件は、荷重の履歴と塑性ひずみの変化に依存する．
+荷重による降伏条件の変化は硬化と呼ばれ、硬化則とはこれを規定したものである．塑性ひずみの進展に伴う降伏曲面の変化の仕方により、弾塑性材料の性質を特徴付けることができる．
+(細かい話はゼミAで勉強してください)</p>
+<p><img data-src="../../pic/abaqus/materials/mat2.png" /> <img data-src="../../pic/abaqus/materials/mat3.png" /></p>
 
       </div>
       

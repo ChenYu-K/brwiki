@@ -8,3 +8,11 @@ tags: code
 # Info
 <i class="fas fa-cog fa-spin"></i> 構築中．
 {% endnote %}
+
+# Index
+
+現在研究にある自動化スクリプト
+
+- [CV2 Crack detection](cv2detec.html)
+- [Material-test](material-test.html)
+- [行列変換](transfor.html)

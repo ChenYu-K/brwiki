@@ -3,6 +3,5 @@ Thumbs.db
 *.log
 .deploy*/
 node_modules/
-public/
 db.json
 build.sh

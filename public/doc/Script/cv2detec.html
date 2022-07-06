@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon.ico">
+  <link rel="mask-icon" href="../../images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="../../css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/purple/pace-theme-center-atom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"brdg.civil.eng.osaka-cu.ac.jp","root":"/","images":"../../images","scheme":"Gemini","darkmode":true,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":true,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="../../js/config.js"></script>
+
+    <meta name="description" content="cv2 き裂検知        cv2処理前のコンクリート図 cv2処理後のひび割れ図          12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CV2 Crack detection">
+<meta property="og:url" content="http://brdg.civil.eng.osaka-cu.ac.jp/doc/Script/cv2detec.html">
+<meta property="og:site_name" content="&lt;i class&#x3D;&quot;fas fa-dragon&quot;&gt;&lt;&#x2F;i&gt; BRWIKI">
+<meta property="og:description" content="cv2 き裂検知        cv2処理前のコンクリート図 cv2処理後のひび割れ図          12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-11-24T09:23:25.000Z">
+<meta property="article:modified_time" content="2022-07-01T05:15:13.122Z">
+<meta property="article:author" content="Bridge Engineering Lab.">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://brdg.civil.eng.osaka-cu.ac.jp/doc/Script/cv2detec">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"http://brdg.civil.eng.osaka-cu.ac.jp/doc/Script/cv2detec.html","path":"doc/Script/cv2detec.html","title":"CV2 Crack detection"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>CV2 Crack detection | <i class="fas fa-dragon"></i> BRWIKI
+</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="../../css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title"><i class="fas fa-dragon"></i> BRWIKI</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Welcom to brwiki</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-index"><a href="../../index/" rel="section"><i class="fa fa-home fa-fw"></i>Index</a></li><li class="menu-item menu-item-archives"><a href="../../archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">7</span></a></li><li class="menu-item menu-item-documentation"><a href="../../doc/" rel="section"><i class="fa fa-book fa-fw"></i>Documentation</a></li><li class="menu-item menu-item-tags"><a href="../../tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">3</span></a></li><li class="menu-item menu-item-about"><a href="../../about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-schedule"><a href="../../schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>Schedule</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#cv2-%E3%81%8D%E8%A3%82%E6%A4%9C%E7%9F%A5"><span class="nav-number">1.</span> <span class="nav-text">cv2 き裂検知</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Bridge Engineering Lab."
+      src="https://cdn.jsdelivr.net/gh/ChenYu-K/pic@main/svg/ocubridgelab.svg">
+  <p class="site-author-name" itemprop="name">Bridge Engineering Lab.</p>
+  <div class="site-description" itemprop="description">Bridge lab. database</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="../../archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="../../tags/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ChenYu-K/brwiki" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ChenYu-K&#x2F;brwiki" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="../../chin@brdg.civil.eng.osaka-cu.ac.jp" title="E-Mail → chin@brdg.civil.eng.osaka-cu.ac.jp"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/omukyoryoken" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;omukyoryoken" rel="noopener" target="_blank"><i class="fab fa-facebook fa-fw"></i>FB Page</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.instagram.com/omu_bridge/" title="Instagram → https:&#x2F;&#x2F;www.instagram.com&#x2F;omu_bridge&#x2F;" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      大阪市立大学橋梁工学研究室HP
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://brdg.civil.eng.osaka-cu.ac.jp/" title="http:&#x2F;&#x2F;brdg.civil.eng.osaka-cu.ac.jp&#x2F;">Site</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">CV2 Crack detection<a href="https://github.com/ChenYu-K/brwiki/tree/master/source/doc/Script/cv2detec.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pen-nib"></i></a>
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="../../doc/">DOCUMENTATION</a></li>
+            <li><a href="../../doc/Script/">SCRIPT</a></li>
+            <li>CV2DETEC</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="cv2-き裂検知">cv2 き裂検知</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">cv2処理前のコンクリート図</th>
+<th style="text-align: center;">cv2処理後のひび割れ図</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img data-src="https://cdn.jsdelivr.net/gh/ChenYu-K/Data-Processing@main/Automation/crackdetection/fig/rr2.png" /></td>
+<td style="text-align: center;"><img data-src="https://cdn.jsdelivr.net/gh/ChenYu-K/Data-Processing@main/Automation/crackdetection/fig/result-rr2.png" /></td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> scipy.ndimage</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">orientated_non_max_suppression</span>(<span class="params">mag, ang</span>):</span><br><span class="line">    ang_quant = np.<span class="built_in">round</span>(ang / (np.pi/<span class="number">4</span>)) % <span class="number">4</span></span><br><span class="line">    winE = np.array([[<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>],[<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>], [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>]])</span><br><span class="line">    winSE = np.array([[<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]])</span><br><span class="line">    winS = np.array([[<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>]])</span><br><span class="line">    winSW = np.array([[<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>], [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>]])</span><br><span class="line"></span><br><span class="line">    magE = non_max_suppression(mag, winE)</span><br><span class="line">    magSE = non_max_suppression(mag, winSE)</span><br><span class="line">    magS = non_max_suppression(mag, winS)</span><br><span class="line">    magSW = non_max_suppression(mag, winSW)</span><br><span class="line"></span><br><span class="line">    mag[ang_quant == <span class="number">0</span>] = magE[ang_quant == <span class="number">0</span>]</span><br><span class="line">    mag[ang_quant == <span class="number">1</span>] = magSE[ang_quant == <span class="number">1</span>]</span><br><span class="line">    mag[ang_quant == <span class="number">2</span>] = magS[ang_quant == <span class="number">2</span>]</span><br><span class="line">    mag[ang_quant == <span class="number">3</span>] = magSW[ang_quant == <span class="number">3</span>]</span><br><span class="line">    <span class="keyword">return</span> mag</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">non_max_suppression</span>(<span class="params">data, win</span>):</span><br><span class="line">    data_max = scipy.ndimage.filters.maximum_filter(data, footprint=win, mode=<span class="string">&#x27;constant&#x27;</span>)</span><br><span class="line">    data_max[data != data_max] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">return</span> data_max</span><br><span class="line"></span><br><span class="line"><span class="comment"># start calulcation</span></span><br><span class="line">gray_image = cv2.imread(<span class="string">r&#x27;rr2.png&#x27;</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">with_nmsup = <span class="literal">True</span> <span class="comment">#apply non-maximal suppression</span></span><br><span class="line">fudgefactor = <span class="number">1.3</span> <span class="comment">#with this threshold you can play a little bit</span></span><br><span class="line">sigma = <span class="number">21</span> <span class="comment">#for Gaussian Kernel</span></span><br><span class="line">kernel = <span class="number">2</span>*math.ceil(<span class="number">2</span>*sigma)+<span class="number">1</span> <span class="comment">#Kernel size</span></span><br><span class="line"></span><br><span class="line">gray_image = gray_image/<span class="number">255.0</span></span><br><span class="line">blur = cv2.GaussianBlur(gray_image, (kernel, kernel), sigma)</span><br><span class="line">gray_image = cv2.subtract(gray_image, blur)</span><br><span class="line"></span><br><span class="line"><span class="comment"># compute sobel response</span></span><br><span class="line">sobelx = cv2.Sobel(gray_image, cv2.CV_64F, <span class="number">1</span>, <span class="number">0</span>, ksize=<span class="number">3</span>)</span><br><span class="line">sobely = cv2.Sobel(gray_image, cv2.CV_64F, <span class="number">0</span>, <span class="number">1</span>, ksize=<span class="number">3</span>)</span><br><span class="line">mag = np.hypot(sobelx, sobely)</span><br><span class="line">ang = np.arctan2(sobely, sobelx)</span><br><span class="line"></span><br><span class="line"><span class="comment"># threshold</span></span><br><span class="line">threshold = <span class="number">4</span> * fudgefactor * np.mean(mag)</span><br><span class="line">mag[mag &lt; threshold] = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#either get edges directly</span></span><br><span class="line"><span class="keyword">if</span> with_nmsup <span class="keyword">is</span> <span class="literal">False</span>:</span><br><span class="line">    mag = cv2.normalize(mag, <span class="number">0</span>, <span class="number">255</span>, cv2.NORM_MINMAX)</span><br><span class="line">    kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>),np.uint8)</span><br><span class="line">    result = cv2.morphologyEx(mag, cv2.MORPH_CLOSE, kernel)</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;im&#x27;</span>, result)</span><br><span class="line">    cv2.waitKey()</span><br><span class="line"></span><br><span class="line"><span class="comment">#or apply a non-maximal suppression</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line"></span><br><span class="line">    <span class="comment"># non-maximal suppression</span></span><br><span class="line">    mag = orientated_non_max_suppression(mag, ang)</span><br><span class="line">    <span class="comment"># create mask</span></span><br><span class="line">    mag[mag &gt; <span class="number">0</span>] = <span class="number">255</span></span><br><span class="line">    mag = mag.astype(np.uint8)</span><br><span class="line"></span><br><span class="line">    kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>),np.uint8)</span><br><span class="line">    result = cv2.morphologyEx(mag, cv2.MORPH_CLOSE, kernel)</span><br><span class="line"></span><br><span class="line">    <span class="comment">#cv2.imshow(&#x27;im&#x27;, result)</span></span><br><span class="line">    cv2.imwrite(<span class="string">&quot;result.png&quot;</span>, result)</span><br><span class="line">    cv2.waitKey()</span><br></pre></td></tr></table></figure>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="../../doc/">DOCUMENTATION</a></li>
+            <li><a href="../../doc/Script/">SCRIPT</a></li>
+            <li>CV2DETEC</li>
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fab fa-fort-awesome-alt"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bridge Engineering Lab.</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdnjs.cloudflare.com/ajax/libs/ribbon.js/1.0.2/ribbon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="../../js/comments.js"></script><script src="../../js/utils.js"></script><script src="../../js/motion.js"></script><script src="../../js/next-boot.js"></script><script src="../../js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="../../js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js","integrity":"sha256-tu9j5pBilBQrWSDePOOajCUdz6hWsid/lBNzK4KgEPM="},"url":"../../lib/pdf/web/viewer.html"}</script>
+  <script src="../../js/third-party/tags/pdf.js"></script>
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.1/mermaid.min.js","integrity":"sha256-8L3O8tirFUa8Va4NSTAyIbHJeLd6OnlcxgupV9F77e0="}}</script>
+  <script src="../../js/third-party/tags/mermaid.js"></script>
+
+
+  <script src="../../js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.1/es5/tex-mml-chtml.js","integrity":"sha256-hlC2uSQYTmPsrzGZTEQEg9PZ1a/+SV6VBCTclohf2og="}}</script>
+<script src="../../js/third-party/math/mathjax.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"http://brdg.civil.eng.osaka-cu.ac.jp/doc/Script/cv2detec.html"}</script>
+  <script src="../../js/third-party/quicklink.js"></script>
+
+</body>
+</html>

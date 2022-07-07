@@ -45,6 +45,10 @@ tags:
 
 ![](/images/lisence.png)
 
+{% note warning %}
+Issues-#7: [CAEやTokenを使う人いない時スクリプトが止まる](https://github.com/ChenYu-K/Data-Processing/issues/7), 気づいたら再起動します．
+{% endnote%}
+
 ## 解析流すルール
 
 |License|Number|Total|

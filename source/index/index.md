@@ -54,7 +54,7 @@ Issues-#7: [CAE&Tokenを使う人いない時スクリプトが止まる](https:
 |License|Number|Total|
 |---|---|---|
 76| 3| 228|
-50| 3| 50|
+50| 2| 50|
 120| 2| 240|
 Total|7|568|
 
@@ -105,7 +105,7 @@ abaqus licensing dslsstat -usage
 |会議受付中|||
 |[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs受付中|Receipt of Abstracts: **14 October 2022**|
 |[IABSE-Istanbul2023](https://iabse.org/Events/Istanbul-2023/Technical-Programme)|Abs受付中|Abstract Submission Deadline **31 August 2022**|
-|[IALCCE-Milano-2023](https://ialcce2023.org/)|Abs受付中|Abstract Submission: **30 July, 2022**|
+|[IALCCE-Milano-2023](https://ialcce2023.org/)|Abs受付中|Abstract Submission: **August 26th, 2022 ({% label danger@EXTENDED %})**|
 |[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Abs受付中|Abstract submission: **19 August, 2022**|
 |開催予定の会議|||
 |[IABMAS-Denmark2024](http://www.f.waseda.jp/akiyama617/rIABMAS/conference.html)|予定|Abstract投稿: May ,2023|

@@ -11,8 +11,8 @@ DICソフトDownloads: `\\NAS_sy21\common\便利グッズ\03.software\画像解�
 
 # 目次
 
--[画像相関法の原理](#画像相関法の原理)  
--[変位計測方法](#変位計測方法)
+-[1. 画像相関法の原理](#画像相関法の原理)  
+-[2. 変位計測方法](#変位計測方法)
 
 # 画像相関法の原理
 
@@ -160,16 +160,16 @@ ANS=corrcoef(a,b)
 
 ## カメラの設定（撮影）
 
-推奨設定：
+![](https://helpguide.sony.net/dc/1910/v1/ja/contents/image/cE08B.png) 推奨設定：
 
-|![](https://helpguide.sony.net/dc/1910/v1/ja/contents/image/cE08B.png)メニュー項目|詳細|説明|
+|**メニュー項目**|詳細|説明|
 |---|---|---|
-|記録方式| `XAVC S 4K`|　4K解像度（3840×2160）で記録できます|
-|記録設定| `24P 100M`　Or `30P 100M` | 3840×2160（24p）で撮影する|
-|露出モード|![](https://helpguide.sony.net/dc/1910/v1/ja/contents/image/s_moviemode_m.png)マニュアル露出|露出（シャッタースピードと絞り）を手動設定する。
-|露出モード*|![](https://helpguide.sony.net/dc/1910/v1/ja/contents/image/s_moviemode_s.png)シャッタースピード優先|シャッタースピードを手動設定する.　|
-|手ブレ補正| `OFF` | 三脚を利用するときは、［切］にすると自然な画像になります。|
-|フォーカスモード| ![](https://helpguide.sony.net/dc/1910/v1/ja/contents/image/s_focusmode_mf.png)`マニュアルフォーカス`|ピント合わせを手動で行う|
+|**記録方式**| `XAVC S 4K`|　4K解像度（3840×2160）で記録できます|
+|**記録設定**| `24P 100M`　Or `30P 100M` | 3840×2160（24p）で撮影する|
+|**露出モード**|![](https://helpguide.sony.net/dc/1910/v1/ja/contents/image/s_moviemode_m.png)マニュアル露出|露出（シャッタースピードと絞り）を手動設定する。
+|**露出モード**|![](https://helpguide.sony.net/dc/1910/v1/ja/contents/image/s_moviemode_s.png)シャッタースピード優先|シャッタースピードを手動設定する.　|
+|**手ブレ補正**| `OFF` | 三脚を利用するときは、［切］にする|
+|**フォーカスモード**| `マニュアルフォーカス`|ピント合わせを手動で行う|
 
 > **絞り**，**ISO感度**，**シャッタースピード**　は静止画の設定を参考にしてください．
 
@@ -196,7 +196,8 @@ ANS=corrcoef(a,b)
 ### 動画の前処理
 
 動画変換APPはGroupBが作ったものを使用するのは推奨する．→Downloads
-{% note waring %}
+
+{% note warning  ディテクト付けた変換ソフトについて %}
 　DIC付けている変換ソフトは　`Downsampling`, `FPSの指定`，`圧縮，グレースケール`などの機能はないため，そのまま非圧縮AVIに変換すると莫大な容量を使用する．
 {% endnote %}
    

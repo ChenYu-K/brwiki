@@ -12,10 +12,9 @@ coauthor:
 {% note primary %}
 
 今まで発表した，あるいはGROUPDから様々な有用なTIPSをまとめた．
-(Tips編集者募集中―ボランティア)
+
 {% endnote %}
 
-<!-- more -->
 *Abaqusに関する情報*
 * [高力ボルト摩擦接合継手モデリングガイドライン](https://cdn.jsdelivr.net/gh/ChenYu-K/brwiki@master/source/doc/BMR_V1.pdf)
 * [Abaqus_Documentation](https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMULIA_Established_FrontmatterMap/sim-r-DSDocAbaqus.htm?ContextScope=all)

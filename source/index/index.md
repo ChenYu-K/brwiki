@@ -46,7 +46,7 @@ tags:
 ![](/images/lisence.png)
 
 {% note warning %}
-Issues-#7: [CAEやTokenを使う人いない時スクリプトが止まる](https://github.com/ChenYu-K/Data-Processing/issues/7), 気づいたら再起動します．
+Issues-#7: [CAE&Tokenを使う人いない時スクリプトが止まる](https://github.com/ChenYu-K/Data-Processing/issues/7), 気づいたら再起動します．
 {% endnote%}
 
 ## 解析流すルール
@@ -54,7 +54,7 @@ Issues-#7: [CAEやTokenを使う人いない時スクリプトが止まる](http
 |License|Number|Total|
 |---|---|---|
 76| 3| 228|
-50| 3| 50|
+50| 2| 50|
 120| 2| 240|
 Total|7|568|
 
@@ -91,7 +91,6 @@ abaqus licensing dslsstat -usage
 |天雲産業のチャック(借り物)|35 ~ 75mm|150mm(115mm)|
 
 
-
 # 学会日程
 
 |Conference name|State|Key dates|
@@ -104,8 +103,9 @@ abaqus licensing dslsstat -usage
 |[土木学会全国大会](https://zenkokutaikai.jsce.or.jp/2022/)|開催|9/15-16, 2022　京都大学|
 |[IABSE-Nanjing2022](https://iabse.org/Events/Nanjing-2022/Technical-Programme)|大会登録中| Final Invitation and Registration Open: June 10, 2022|
 |会議受付中|||
-|[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs受付中|Call for Abstracts opens: **20 June 2022**|
-|[IALCCE-Milano-2023](https://ialcce2023.org/)|Abs受付中|Abstract Submission: **30 July, 2022**|
+|[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs受付中|Receipt of Abstracts: **14 October 2022**|
+|[IABSE-Istanbul2023](https://iabse.org/Events/Istanbul-2023/Technical-Programme)|Abs受付中|Abstract Submission Deadline **31 August 2022**|
+|[IALCCE-Milano-2023](https://ialcce2023.org/)|Abs受付中|Abstract Submission: **August 26th, 2022 ({% label danger@EXTENDED %})**|
 |[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Abs受付中|Abstract submission: **19 August, 2022**|
 |開催予定の会議|||
 |[IABMAS-Denmark2024](http://www.f.waseda.jp/akiyama617/rIABMAS/conference.html)|予定|Abstract投稿: May ,2023|

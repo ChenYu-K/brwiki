@@ -188,6 +188,8 @@ for i in range(3,y) :
 wb.save("111.xlsx")     #保存する
 ```
 
+<img src="./pic/result.png" width="60%"/>
+
 # Full Code
 
 1. フォルダ内に`.csv`ファイルを探して，名前を取得する．

@@ -5,12 +5,18 @@ tags: DIC
 mathjax: true
 ---
 
+{% note info %}
+DICソフトDownloads: `\\NAS_sy21\common\便利グッズ\03.software\画像解析20211207\setup.exe`
+{% endnote %}
+
 # 目次
 
--[画像相関法の原理](index.html)  
--[変位計測方法](dic-disp.html)
+-[1. 画像相関法の原理](#画像相関法の原理)  
+-[2. 変位計測方法](dic-disp.html)
 
-# 相関とは
+# 画像相関法の原理
+
+## 相関とは
 
 相関値(r)の計算式
 

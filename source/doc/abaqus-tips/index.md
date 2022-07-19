@@ -25,3 +25,8 @@ coauthor:
 
 <!-- [材料構成側](/doc/abaqus-tips/constitutive-equation-materials.html) -->
 [材料構成側](./constitutive-equation-materials.html 'class=red&target=_blank&data-layout=card')
+
+## 解析モデル作成
+
+<!-- [要素の追加と除去](/doc/abaqus-tips/Analytical_model_creation.html) -->
+[要素の追加と除去](./Analytical_model_creation.html 'class=red&target=_blank&data-layout=card')

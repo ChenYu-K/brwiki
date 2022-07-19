@@ -1,0 +1,4 @@
+# pic 
+```
+./amcreation/xxx.png
+```

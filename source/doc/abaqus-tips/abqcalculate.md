@@ -13,8 +13,7 @@ tags: abaqus
 |---|---|---|---|
 |[run50](/file/aba/Abaqus自動直列実行_V10_run50.vbs)|データチェックや軽い計算の方| 1CPU| 50|
 |[run75](/file/aba/Abaqus自動直列実行_V10_run75.vbs)|最も使われている．シェルやソリッド等々 | 4CPU| 76|
-|[run111](/file/aba/Abaqus自動直列実行_V10_run111.vbs)|基本ソリッド、あるいは全橋モデルなど | 8CPU| 111|
-|[runGPU](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（ソリッド、座屈、など）| 8CPU+1GPU| 120|
+|[run120](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（ソリッド、座屈、など）| 8CPU+1GPU| 120|
 
 > Download: 名前をクリックしてダウンロード出来ます
 
@@ -22,7 +21,7 @@ tags: abaqus
 
 {% note warning %}
 
-- 基本同じBrabqで`RunGPU`一個しか実行できません．
+- 基本同じBrabqで`Run120`一個しか実行できません．
 
 {% endnote %}
 
@@ -31,9 +30,9 @@ tags: abaqus
 |License|Number|Total|
 |---|---|---|
 76| 3| 228|
-50| 3| 50|
-120| 2| 240|
-Total|7|568|
+50| 1| 50|
+120| 3| 240|
+Total|7|638|
 
 # どこで流す？
 ## 各BRBQの構成

@@ -6,14 +6,16 @@ tags: abaqus
 
 # 直列実行スクリプト
 
-## 流す方
-橋梁研究基本四つ流れ方があります．
+## 流れ方
 
-|License|Momo|消費CPU|License|
+> 橋梁研現在究基本二つ流れ方があります．
+
+<!-- |[run50](/file/aba/Abaqus自動直列実行_V10_run50.vbs)|データチェックや軽い計算の方| 1CPU| 50| -->
+
+|Script|Momo|消費CPU|License|
 |---|---|---|---|
-|[run50](/file/aba/Abaqus自動直列実行_V10_run50.vbs)|データチェックや軽い計算の方| 1CPU| 50|
-|[run75](/file/aba/Abaqus自動直列実行_V10_run75.vbs)|最も使われている．シェルやソリッド等々 | 4CPU| 76|
-|[run120](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（ソリッド、座屈、など）| 8CPU+1GPU| 120|
+|[run76](/file/aba/Abaqus自動直列実行_V10_run75.vbs)|最も使われている．シェルやソリッド等々 | 4CPU| 76|
+|[run120](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（接触、座屈、など）| 8CPU+1GPU| 120|
 
 > Download: 名前をクリックしてダウンロード出来ます
 
@@ -37,12 +39,12 @@ Total|7|638|
 # どこで流す？
 ## 各BRBQの構成
 
-|Name|CPU|Memory|
-|---|---|---|
-|Brabq7| E5-1620v3@3.50GHz| 128G|
-|Braqb8| E5-2609v3@1.90GHz| 256G|
-|Brabq9| E5-2620v4@2.10GHz| 256G|
-|Brabq10| Silver-4110@2.10GHz | 128G|
+|Name|CPU|Memory|GPU|
+|---|---|---|---|
+|Brabq7| E5-1620v3@3.50GHz| 128G| -|
+|Braqb8| E5-2609v3@1.90GHz x2| 256G| RTX A2000 12G|
+|Brabq9| E5-2620v4@2.10GHz x2| 256G| RTX A4000 16G|
+|Brabq10| Silver-4110@2.10GHz x2 | 128G| RTX A4000 16G|
 
 # How to terminated the job?
 

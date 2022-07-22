@@ -5,7 +5,8 @@ tags:
 ---
 
 {% note warning %}
-<i class="fas fa-cog fa-spin"></i> Brdgメールのセキュリティ問題が解決不可能なので(大学の方針と違う)，現在brdgメールサーバーを廃棄する方向でうごいています-2022.6.10-chen。
+<i class="fas fa-cog fa-spin"></i> Brdgメールのセキュリティ問題が解決不可能なので(大学の方針と違う)，現在brdgドメインを~~廃棄する方向でうごいています-~~9月までに大学の方に移管する．ファイル共有システム
+は何を使うのか  2022.6.10-chen。
 {% endnote %}
 
 # 便利帳Index
@@ -19,7 +20,6 @@ tags:
 
 <!-- <button type="button">Click Me!</button> -->
 - <i class="far fa-folder-open"></i> [ファイル共有システム](http://brdg.civil.eng.osaka-cu.ac.jp/filePublisher/login.php)
-- <i class="far fa-folder-open"></i> [**新**ファイル共有システムOMU](https://webdav.ecs.osaka-cu.ac.jp/proself/) ☞ 使い方は[こちら](https://info.ecs.osaka-cu.ac.jp/?page_id=4903)
 - <i class="fas fa-school"></i> [教室予約システム](https://www.r326.com/b/main.aspx?g=rMSqVK3523reGnQ80)  (Password:`toshi`)
 - <i class="fas fa-cog"></i> [アムスラー予約システム](https://www.r326.com/b/main.aspx?g=8YB015ird1oUonNH1)
 - <i class="fas fa-plug"></i> [OMU障害/メンテナンス情報](https://e.omu.ac.jp/announce/)

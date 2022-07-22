@@ -33,16 +33,17 @@ tags: abaqus
 50| 1| 50|
 120| 3| 240|
 Total|7|638|
+> 注意事項：期間 2022.8～2022.10，2022.12～2023.2
 
 # どこで流す？
 ## 各BRBQの構成
 
-|Name|CPU|Memory|
-|---|---|---|
-|Brabq7| E5-1620v3@3.50GHz| 128G|
-|Braqb8| E5-2609v3@1.90GHz| 256G|
-|Brabq9| E5-2620v4@2.10GHz| 256G|
-|Brabq10| Silver-4110@2.10GHz | 128G|
+|Name|CPU|GPU|Memory|
+|---|---|---|---|
+|Brabq7| E5-1620v3@3.50GHz| |128G|
+|Braqb8| E5-2609v3@1.90GHz| NVIDIA RTX A2000 12GB| 256G|
+|Brabq9| E5-2620v4@2.10GHz| NVIDIA RTX A4000 16GB| 256G|
+|Brabq10| Silver-4110@2.10GHz | NVIDIA RTX A4000 16GB| 128G|
 
 # How to terminated the job?
 

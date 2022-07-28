@@ -14,8 +14,8 @@ tags: abaqus
 
 |Script|Momo|消費CPU|License|
 |---|---|---|---|
-|[run76](/file/aba/Abaqus自動直列実行_V10_run75.vbs)|最も使われている．シェルやソリッド等々 | 4CPU| 76|
-|[run120](/file/aba/Abaqus自動直列実行_V10_rungpu.vbs)|非線形問題が厳しいモデル（接触、座屈、など）| 8CPU+1GPU| 120|
+|[run76](/file/aba/Abaqus自動直列実行_V11_run76.vbs)|最も使われている．シェルやソリッド等々 | 4CPU| 76|
+|[run120](/file/aba/Abaqus自動直列実行_V11_rungpu.vbs)|非線形問題が厳しいモデル（接触、座屈、など）| 8CPU+1GPU| 120|
 
 > Download: 名前をクリックしてダウンロード出来ます
 

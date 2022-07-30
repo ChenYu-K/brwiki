@@ -9,6 +9,12 @@ tags:
 は何を使うのか  2022.6.10-chen。
 {% endnote %}
 
+{% note info %}
+Abaqus　直列実行スクリプトをV１１にアップデートしました．→[詳細](https://github.com/ChenYu-K/Data-Processing/releases/tag/Abaqus-serial-execution-script)　2022.07.29-chen。
+{% endnote %}
+
+
+
 # 便利帳Index
 橋梁研データベースの利用便利帳
 

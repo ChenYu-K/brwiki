@@ -10,7 +10,8 @@ tags:
 {% endnote %}
 
 {% note info %}
-Abaqus　直列実行スクリプトをV１１にアップデートしました．→[詳細](https://github.com/ChenYu-K/Data-Processing/releases/tag/Abaqus-serial-execution-script)　2022.07.29-chen。
+Abaqus　[直列実行スクリプト](file://nas_sy21/common/%E4%BE%BF%E5%88%A9%E3%82%B0%E3%83%83%E3%82%BA/02.%E8%A7%A3%E6%9E%90/%E7%9B%B4%E5%88%97%E5%AE%9F%E8%A1%8C%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/)をV11にアップデートしました．→[変更詳細はここ](https://github.com/ChenYu-K/Data-Processing/releases/tag/Abaqus-serial-execution-script)　2022.08.5-chen。  
+[📁`\\NAS_sy21\common\便利グッズ\02.解析\直列実行スクリプト`](http://10.108.51.13:5000/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252Fcommon%252F%25E4%25BE%25BF%25E5%2588%25A9%25E3%2582%25B0%25E3%2583%2583%25E3%2582%25BA%252F02.%25E8%25A7%25A3%25E6%259E%2590%252F%25E7%259B%25B4%25E5%2588%2597%25E5%25AE%259F%25E8%25A1%258C%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2597%25E3%2583%2588%252F)
 {% endnote %}
 
 

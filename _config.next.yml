@@ -32,7 +32,6 @@ custom_logo: #/uploads/custom-logo.jpg
 menu:
   Index: /index/ || fa fa-home
   #categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-archive
   Documentation: 
     default: /doc/ ||fa fa-book
     Abaqus:
@@ -52,9 +51,10 @@ menu:
     How2Edit:
       default: /How2edit/ || fas fa-question
   #about: /about || fas fa-dog
+  Database: /Database/ || fa-solid fa-folder-open
+  archives: /archives/ || fa fa-archive
   tags: /tags/ || fa fa-tags
-  about: /about/ || fa fa-user
-  schedule: /schedule/ || fa fa-calendar
+  #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
 

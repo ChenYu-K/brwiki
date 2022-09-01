@@ -4,6 +4,10 @@ date: 2021-09-08 18:20:04
 tags:
 ---
 
-# 橋梁研カレンダー
+# イベント
 
-<iframe src="https://calendar.google.com/calendar/embed?src=brdg.student%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+## ゼミ旅行
+
+### 2021北海道
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XULgL1kHtJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

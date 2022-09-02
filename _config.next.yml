@@ -51,7 +51,7 @@ menu:
     How2Edit:
       default: /How2edit/ || fas fa-question
   #about: /about || fas fa-dog
-  Database: /Database/ || fa-solid fa-folder-open
+  Database: /Database/ || fa fa-folder-open
   archives: /archives/ || fa fa-archive
   tags: /tags/ || fa fa-tags
   #schedule: /schedule/ || fa fa-calendar

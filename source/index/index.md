@@ -5,8 +5,7 @@ tags:
 ---
 
 {% note warning %}
-<i class="fas fa-cog fa-spin"></i> Brdgメールのセキュリティ問題が解決不可能なので(大学の方針と違う)，現在brdgドメインを~~廃棄する方向でうごいています-~~9月までに大学の方に移管する．ファイル共有システム
-は何を使うのか  2022.6.10-chen。
+<i class="fas fa-cog fa-spin"></i> 新しい学生フォルダ： `\\NAS_sy21\student`．  2022.10.17 -chen。
 {% endnote %}
 
 {% note info %}

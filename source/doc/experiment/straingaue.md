@@ -2,6 +2,7 @@
 title: 1ゲージ法の種類
 date: 2022-10-19
 tags: abaqus
+mathjax: true
 coauthor:
     - Group D;
     - Ryo Sakura; Yu Chen

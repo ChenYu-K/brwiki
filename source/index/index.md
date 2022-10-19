@@ -126,6 +126,12 @@ abaqus licensing dslsstat -usage
 
 SourceCode: \\nas_sy21\web\wiki  
 
+## 論文集フォーマット
+
+
+鋼構造論文集: [World](http://www.jssc.or.jp/thesis/pdf/20170816_format.doc) , [Latex](https://www.overleaf.com/8722586165tzsngqbcgykt)
+全国大会： [Latex_EN](https://www.overleaf.com/7598323662xrtdgdhmvysy)
+
 ## ヤマト集荷
 
 [オンライン集荷](https://shuka.kuronekoyamato.co.jp/shuka_req/TopAction_doInit.action?portal=top&ref=portal_A1c%3D)

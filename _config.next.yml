@@ -38,6 +38,8 @@ menu:
       default: /abaqus-tips/ ||fas fa-laptop
       Bolt modeling research: /BMR.html ||fas fa-cogs
       サーバー計算の流れ: /abqcalculate.html ||fas fa-calculator
+    Experiment:
+      default: /experiment/ ||fas fa-flask
     DIC:
       default: /DIC/ ||fas fa-book
       変位計測方法: /dic-disp.html ||fa-solid fa-camera

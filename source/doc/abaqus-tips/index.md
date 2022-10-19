@@ -33,7 +33,7 @@ coauthor:
 [要素の追加と除去](./Analytical_model_creation.html)
 
 
-[ばね要素](./spring_20element.html)
+[ばね要素](./spring_element.html)
 
 
 [残留応力（熱で）](./zanryuouryoku.html)

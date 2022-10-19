@@ -1,10 +1,9 @@
 ---
 title: abaqus-tips
-date: 2021-10-30 01:10:11
+date: 2022-10-19 12:05:11
 tags: abaqus
 coauthor:
-    - Group D;
-    - Chen Yu
+    - Group B
 ---
 
 # Abaqus Tips
@@ -24,13 +23,24 @@ coauthor:
 ## 材料
 
 
-</br>
 [材料構成側](./constitutive-equation-materials.html)
 
+</br>
 
 ## 解析モデル作成
 
-<!-- [要素の追加と除去](/doc/abaqus-tips/Analytical_model_creation.html) -->
 
 [要素の追加と除去](./Analytical_model_creation.html)
 
+
+[ばね要素](./spring%20element.md.html)
+
+
+[残留応力（熱で）](./zanryuouryoku.html)
+
+</br>
+
+## トラブルシューティング
+
+
+[破損したcaeファイルの復元方法](./Abaqus‗cae_recover.html)

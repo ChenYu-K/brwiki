@@ -68,7 +68,10 @@ $$
 
 ・着目する最大振動数⇒自分が見たい最大の振動数
 
+{% note success %}
 ※Lanczosは最も一般的な解法で，計算速度がAMSより遅いが，刺激係数野モーダル有効質量を計算してくれる．
+{% endnote %}
+
 
 <img src='./pic/eigenvalue/pic7.png' width='50%'/>
 

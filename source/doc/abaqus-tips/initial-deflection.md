@@ -2,6 +2,7 @@
 title: 初期たわみ導入法
 date: 2022-10-18 
 tags: abaqus
+mathjax: true
 coauthor:
     - Group B;
     - Ren Yamada
@@ -25,6 +26,7 @@ inpファイルをコピーして，新しいinpファイルを作成
 ## ④
 Excelで初期たわみを導入．
 道路橋示方書では以下の式としている
+
 $$
 w=\frac{b}{150}\rm{sin}\left(\frac{\pi x}{a}\right)\rm{sin}\left(\frac{\pi y}{b}\right)
 $$

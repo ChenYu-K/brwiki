@@ -20,31 +20,22 @@ coauthor:
 
 # 目次
 
-## 材料
-
+## 解析TIPS
 
 [材料構成側](./constitutive-equation-materials.html)
 
-</br>
-
-## 解析モデル作成
-
-
-[要素の追加と除去](./Analytical_model_creation.html)
-
-
-[ばね要素](./spring_element.html)
-
+[初期不正](./initial-deflection.html)
 
 [残留応力（熱で）](./zanryuouryoku.html)
 
-[初期不正](./initial-deflection.html)
+[ばね要素](./spring_element.html)
+
+[要素の追加と除去](./Analytical_model_creation.html)
 
 [固有値解析](./Eigenvalue_analysis.html)
 
 </br>
 
 ## トラブルシューティング
-
 
 [破損したcaeファイルの復元方法](./Abaqus‗cae_recover.html)

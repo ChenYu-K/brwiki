@@ -32,7 +32,7 @@ $$
 $$
 $\Delta e \ll R$ の場合
 $$
-\Delta e=\frac{\Delta R}{4 R} E=\frac{e}{4} \mathrm{~K} \varepsilon
+\Delta e=\frac{\Delta R}{4 R} E=\frac{E}{4} K\varepsilon
 $$
 
 **計測目的別ゲージ長の例**

@@ -38,6 +38,10 @@ coauthor:
 
 [残留応力（熱で）](./zanryuouryoku.html)
 
+[初期不正](./initial-deflection.html)
+
+[固有値解析](./Eigenvalue_analysis.html)
+
 </br>
 
 ## トラブルシューティング

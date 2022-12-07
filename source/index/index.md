@@ -24,8 +24,7 @@ Abaqus　[直列実行スクリプト](file://nas_sy21/common/%E4%BE%BF%E5%88%A9
 <i class="fas fa-home" style="color: #339af0;"></i> [橋梁研HP](http://brdg.civil.eng.osaka-cu.ac.jp/index.html)  
 <i class="fas fa-dove" style="color: #057bce;"></i>[desknet's NEO](https://bridge-ocu.dn-cloud.com/cgi-bin/dneo/dneo.cgi?cmd=schindex#cmd=schmonth&date=20211104&id=7)  
 
-<!-- <button type="button">Click Me!</button> -->
-- <i class="far fa-folder-open"></i> [ファイル共有システム](http://brdg.civil.eng.osaka-cu.ac.jp/filePublisher/login.php)
+- <i class="far fa-folder-open"></i> [ファイル共有システム({% label @new %})](https://www.bridge-omu.com/nextcloud/index.php/apps/files/?dir=/&fileid=144)
 - <i class="fas fa-school"></i> [教室予約システム](https://www.r326.com/b/main.aspx?g=rMSqVK3523reGnQ80)  (Password:`toshi`)
 - <i class="fas fa-cog"></i> [アムスラー予約システム](https://www.r326.com/b/main.aspx?g=8YB015ird1oUonNH1)
 - <i class="fas fa-plug"></i> [OMU障害/メンテナンス情報](https://e.omu.ac.jp/announce/)
@@ -47,9 +46,17 @@ Abaqus　[直列実行スクリプト](file://nas_sy21/common/%E4%BE%BF%E5%88%A9
 
 # 解析  
 
-![](/images/caelisence.png)  
+<script>
 
-![](/images/lisence.png)
+var num = Math.random()*100;
+pic3='/images/licensestatus.png';
+
+
+document.write("<p> <img src=/images/caelisence.png?"+num+" width='80%'/></p>");
+document.write("<p> <img src=/images/lisence.png?"+num+" width='80%'/></p>");
+document.write("<p> <img src=/images/licensestatus.png?"+num+" width='60%'/></p>");
+
+</script>
 
 {% note warning %}
 Issues-#7: [CAE&Tokenを使う人いない時スクリプトが止まる](https://github.com/ChenYu-K/Data-Processing/issues/7), 気づいたら再起動します．

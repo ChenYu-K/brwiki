@@ -27,6 +27,8 @@ Abaqus　[直列実行スクリプト](file://nas_sy21/common/%E4%BE%BF%E5%88%A9
 - <i class="far fa-folder-open"></i> [ファイル共有システム({% label @new %})](https://www.bridge-omu.com/nextcloud/index.php/apps/files/?dir=/&fileid=144)
 - <i class="fas fa-school"></i> [教室予約システム](https://www.r326.com/b/main.aspx?g=rMSqVK3523reGnQ80)  (Password:`toshi`)
 - <i class="fas fa-cog"></i> [アムスラー予約システム](https://www.r326.com/b/main.aspx?g=8YB015ird1oUonNH1)
+- <i class="fas fa-cog"></i> [すべり試験フォーマット（形状計測シート・締付けシート・すべり試験時tsd）({% label @new %})](http://10.108.51.13:5000/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252Fcommon%252F%25E4%25BE%25BF%25E5%2588%25A9%25E3%2582%25B0%25E3%2583%2583%25E3%2582%25BA%252F01.%25E5%25AE%259F%25E9%25A8%2593%252F%25E2%2598%2585%25E3%2581%2599%25E3%2581%25B9%25E3%2582%258A%25E8%25A9%25A6%25E9%25A8%2593%25E3%2581%25AE%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%259E%25E3%2583%2583%25E3%2583%2588%25E9%25A1%259E%25E2%2598%2585%252F) (ユーザー名：`bridge`，Password:`lo7buckl`)
+- <i class="fas fa-cog"></i> [実験オリエンテーション資料・実験ガイド({% label @new %})](http://10.108.51.13:5000/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252Fcommon%252F%25E4%25BE%25BF%25E5%2588%25A9%25E3%2582%25B0%25E3%2583%2583%25E3%2582%25BA%252F01.%25E5%25AE%259F%25E9%25A8%2593%252F%25E2%2598%2585%25E5%25AE%259F%25E9%25A8%2593%25E3%2582%25AA%25E3%2583%25AA%25E3%2582%25A8%25E3%2583%25B3%25E3%2583%2586%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E8%25B3%2587%25E6%2596%2599%25E2%2598%2585%252F)(ユーザー名：`bridge`，Password:`lo7buckl`)
 - <i class="fas fa-plug"></i> [OMU障害/メンテナンス情報](https://e.omu.ac.jp/announce/)
 - <i class="fas fa-server"></i> [TS5410d285管理画面](http://10.108.51.9/login.html)
 - <i class="fas fa-server"></i> [NAS_SY21管理画面](http://10.108.51.13:5000/)
@@ -114,23 +116,37 @@ abaqus licensing dslsstat -usage
 
 |Conference name|State|Key dates|
 |----|--|--------|
-|現在プログラム進行中|||
-|[EASEC-17-Singapore2022](https://easec-17.org/)|開催|27-30 June 2022   (NEXT Is 2024)|
-|[IABMAS-Spain2022](https://congress.cimne.com/iabmas2022/frontal/dates.asp)|開催|11-15 July 2022|
-|[SHMII-11-Montreal 2022](https://sites.events.concordia.ca/sites/shmii/en/shmii-11-montreal-2022/)|開催| 8-12 August, 2022|
-|[日独-OCU]()|?| 開催時間: 30 August, 2022 |
-|[土木学会全国大会](https://zenkokutaikai.jsce.or.jp/2022/)|開催|9/15-16, 2022　京都大学|
-|[IABSE-Nanjing2022](https://iabse.org/Events/Nanjing-2022/Technical-Programme)|大会登録中| Final Invitation and Registration Open: June 10, 2022|
-|会議受付中|||
-|[IABSE-New Delhi2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Abs受付中|Receipt of Abstracts: **14 October 2022**|
-|[IABSE-Istanbul2023](https://iabse.org/Events/Istanbul-2023/Technical-Programme)|Abs受付中|Abstract Submission Deadline **31 August 2022**|
-|[IALCCE-Milano-2023](https://ialcce2023.org/)|Abs受付中|Abstract Submission: **August 26th, 2022 ({% label danger@EXTENDED %})**|
-|[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Abs受付中|Abstract submission: ~~19 August~~ **September 19, 2022**|
-|開催予定の会議|||
+|**現在プログラム進行中**|||
+|[IABSE-Istanbul2023](https://iabse.org/Events/New-Delhi-2023/Technical-Programme)|Fullpaper受付中|Deadline Submission of Full Papers:**15 January 2023**|
+|[IABSE-New Delhi2023](https://iabse.org/Events/Istanbul-2023/Technical-Programme)|Abs受付中|Abstract Submission Deadline **15 December 2022**|
+|[IALCCE-Milano-2023](https://ialcce2023.org/)|Paper受付中|Deadline Submission of Papers: **January 9, 2023EXTENDED)**|
+|[EUROSTRUCT2023-Vienna](https://eurostruct.org/eurostruct-2023/)|Fullpaper受付中|Deadline Submission of Full Papers:**15 January 2023**|
+|[ICCS26-Portugal](https://events.unibo.it/iccs)|Abs受付中|Submission of Abstract : **December 31, 2022**|
+|[ISSS-2023](http://www.isss.kr/)|Abs受付中|Submission of Abstract : **February 28, 2023**|
+|[ICSCES-Italy-2023](https://icsces.com/#organisation/)|Abs受付中|Abstract Submission: **February 28, 2023**|
+|OOOOOO|OOOOOOO|OOOOOOO|
+|**会議予定**|||
 |[IABMAS-Denmark2024](http://www.f.waseda.jp/akiyama617/rIABMAS/conference.html)|予定|Abstract投稿: May ,2023|
-|PCSS|3年一度|Pacific Structural Steel Conference|
-|ICSCS|3年一度|International Conference on Steel and Compsosite Structures|
-|ISSS-2024|2年一度|International Symposium on Steel Structures |
+|[日独-OMU]()|予定| 開催時間 : 2023 |
+|OOOOOO|OOOOOOO|OOOOOOO|
+|**各会議の開催頻度**|||
+|IABSE|1年二度|International Association for Bridge and Structural Engineering（直近：2022@Nanjing）|
+|IABMAS|2年一度|International Association for Bridge Maintenance, Safety and Management（直近：2022@Spain）|
+|ICCS|1年一度|International Conference on Composite Structures（直近：2022@Portugal, 毎回Portugal？）supported by Composite Structures, an international Journal from Elsevier.|
+|IALCCE|2年一度|International Association for Life-Cycle Civil Engineering（直近：2023@Milano, 2025@??）|
+|PSSC|3年一度|Pacific Structural Steel Conference（直近：2019@Tokyo）|
+|EASEC|3年一度|East Asia-Pacific Conference on Structural Engineering and Construction（直近：2022@Singapore）|
+|ICSCES|??|International Conference of Steel and Compsosite for Engineering Structures（直近：2023@Italy）|
+|ICASS|2年一度|International Conference on Advances in Steel Structures（直近：2022@Chengdu, China）|
+|SEMC|3年一度|International Conference on structural engineering, mechanics and computation （直近：2022@Cape town, 毎回Cape town）|
+|OOOOOO|OOOOOOO|OOOOOOO|
+|**終了**|||
+|[IABSE-Nanjing2022](https://iabse.org/Events/Nanjing-2022/Technical-Programme)|終了| Final Invitation and Registration Open: June 10, 2022|
+|[EASEC-17-Singapore2022](https://easec-17.org/)|終了|27-30 June 2022|
+|[IABMAS-Spain2022](https://congress.cimne.com/iabmas2022/frontal/dates.asp)|終了|11-15 July 2022|
+|[SHMII-11-Montreal 2022](https://sites.events.concordia.ca/sites/shmii/en/shmii-11-montreal-2022/)|終了| 8-12 August, 2022|
+|[日独-OCU]()|終了| 開催: 30 August, 2022 |
+|[土木学会全国大会](https://zenkokutaikai.jsce.or.jp/2022/)|終了|9/15-16, 2022　京都大学|
 
 # その他
 

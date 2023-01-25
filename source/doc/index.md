@@ -14,5 +14,6 @@ date: 2021-10-30 20:35:01
 - [Abaqus関連](./abaqus-tips/)
 - [DICマニュアル](./DIC/)
 - [自動化スクリプト](./Script/)
-- [実験]()
+- [実験](./experiment)
+- [Group Tips](./Group_Tips )
 - [本サイトの編集方法](./How2edit/)

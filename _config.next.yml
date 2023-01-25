@@ -40,6 +40,8 @@ menu:
       サーバー計算の流れ: /abqcalculate.html ||fas fa-calculator
     Experiment:
       default: /experiment/ ||fas fa-flask
+    GroupTips:
+      default: /Group_Tips/ ||fas fa-users
     DIC:
       default: /DIC/ ||fas fa-book
       変位計測方法: /dic-disp.html ||fa-solid fa-camera

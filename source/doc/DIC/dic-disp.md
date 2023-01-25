@@ -51,7 +51,7 @@ mathjax: true
 
 ### 動画の前処理
 
-動画変換APPはGroupBが作ったものを使用するのは推奨する．→[Downloads](https://github.com/ChenYu-K/Data-Processing/raw/main/DIC/Br-StreamConverter_resources/Br-StreamConverter.mlappinstall)
+動画変換APPはGroupBが作ったものを使用するのは推奨する．→[Downloads](https://github.com/ChenYu-K/Data-Processing/releases/download/movie2avi_v1.1/Br-StreamConverter_V1.1.mlappinstall)
 
 {% tabs Sixth unique name %}
 <!-- tab Output Type -->

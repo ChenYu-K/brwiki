@@ -39,3 +39,9 @@ coauthor:
 ## トラブルシューティング
 
 [破損したcaeファイルの復元方法](./Abaqus‗cae_recover.html)
+
+</br>
+
+## 解析のルール
+
+[解析の流し方と止め方](./nagashikata-tomekata.html)

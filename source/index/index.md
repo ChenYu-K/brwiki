@@ -124,6 +124,7 @@ abaqus licensing dslsstat -usage
 |[ICCS26-Portugal](https://events.unibo.it/iccs)|Abs受付中|Submission of Abstract : **December 31, 2022**|
 |[ISSS-2023](http://www.isss.kr/)|Abs受付中|Submission of Abstract : **February 28, 2023**|
 |[ICSCES-Italy-2023](https://icsces.com/#organisation/)|Abs受付中|Abstract Submission: **February 28, 2023**|
+|[PSSC-2023](http://www.pssc2022.com/index.html)|Abs受付中|Abstract Submission: **February 28, 2023**|
 |OOOOOO|OOOOOOO|OOOOOOO|
 |**会議予定**|||
 |[IABMAS-Denmark2024](http://www.f.waseda.jp/akiyama617/rIABMAS/conference.html)|予定|Abstract投稿: May ,2023|

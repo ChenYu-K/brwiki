@@ -52,7 +52,7 @@ menu:
       行列一括変換: /transfor.html || fas fa-crop-alt
       Code_tutorials: /Code_tutorials.html || fas fa-code
     Equipment:
-      default: /Equipment/ || far fa-computer-classic
+      default: /Equipment/ || fas fa-tv
     How2Edit:
       default: /How2edit/ || fas fa-question
   #about: /about || fas fa-dog

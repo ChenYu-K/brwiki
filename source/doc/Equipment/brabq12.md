@@ -9,7 +9,7 @@ tags: equipment
 Brabq12は，橋梁研究室のHPCサーバーです．
 ABAQUSの計算を行うために購入しました．
 
-![](https://www.supermicro.com/files_SYS/images/System/SYS-740GP-TNRT_main.jpg)
+<img src="https://www.supermicro.com/files_SYS/images/System/SYS-740GP-TNRT_main.jpg" width="80%" />
 
 
 | 項目 | 内容 |
@@ -46,7 +46,9 @@ ABAQUSの計算を行うために購入しました．
 
 Abaqus/ Standard ではFP64で計算している,  Explicit　では単精度(FP32)で計算している
 
+{% note success %}
 A30はFP64(5.2Tflops)での性能が高いので，A30を選択しました．
+{% endnote %}
 
 
 # 接続方法
@@ -59,6 +61,10 @@ LinuxのOSを搭載しているPCから，SSHで接続できます．
 
 # 使用方法
 
+{% note info %} 
+分からないところがある場合，[ASK Ubuntu](https://askubuntu.com/) or ChatGpt　に聞いてください．
+{% endnote %}
+
 ## サーバー管理パネル
 
  > https://brabq12:9090/ ここからサーバーの状態を確認できます．
@@ -69,28 +75,38 @@ Cockpitは標準でポート9090を利用しますがGitLabを利用されてい
 
 1. aptを利用してCockpitをUbuntu20.04にインストールできます。
 
-`sudo apt update`
+```bash
+sudo apt update
+```
 
 2. cockpitをインストール。
 
-`sudo apt -y install cockpit`
+```bash
+sudo apt -y install cockpit
+```
 
 3. Cockpitを起動する。
 
-`sudo systemctl start cockpit`
+```bash
+sudo systemctl start cockpit
+```
 
 4. 確認する。
 
-`sudo systemctl status cockpit`
+```bash
+sudo systemctl status cockpit
+```
 
 5. OSを再起動した場合でも起動するようにする。
 
-`sudo systemctl enable cockpit`
+```bash
+sudo systemctl enable cockpit
+```
 
 
 ## ABAQUSのインストール方法
 
-詳細は[ここ](https://gist.github.com/franaudo/8a9c27acffd544d21c75bac2b54d92fe)に参考してください
+詳細は[ここ](https://github.com/franaudo/abaqus-ubuntu)に参考してください
 
 ### インストール前の環境設定
 
@@ -191,3 +207,4 @@ sudo service smbd restart
     - `kill -9 PID`でabaqusのプロセスを停止する
     - 
 3. `abaqus terminate job=jobname`でabaqusのジョブを停止する
+

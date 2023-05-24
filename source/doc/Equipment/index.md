@@ -1,18 +1,15 @@
 ---
-title: 自動化スクリプト
-date: 2021-11-24 16:26:52
-tags: code
+title: 橋梁研備品紹介
+date: 2023-05-24 16:26:52
+tags: equipment
 ---
 
-{% note info %} 
-# Info
-<i class="fas fa-cog fa-spin"></i> 構築中．
-{% endnote %}
+# 電子機器
 
-# Index
+## パソコン類
 
-現在研究にある自動化スクリプト
+- [Brabq12-(HPC-サーバー)](brabq12.html)
 
-- [CV2 Crack detection](cv2detec.html)
-- [Material-test](material-test.html)
-- [行列変換](transfor.html)
+## 打ち合わせ用
+
+- [ヤマハ　スピーカーシステム　YVC1000](http://10.108.51.13:5000/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252Fcommon%252F%25E4%25BE%25BF%25E5%2588%25A9%25E3%2582%25B0%25E3%2583%2583%25E3%2582%25BA%252F04.%25E3%2581%258A%25E5%25BD%25B9%25E7%25AB%258B%25E3%2581%25A1%25E6%2583%2585%25E5%25A0%25B1%252FGroup%2520Tips%25E3%2580%2580%252F%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%25E6%25A9%259F%25E5%2599%25A8%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E6%2596%25B9%252F)

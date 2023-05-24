@@ -50,8 +50,9 @@ menu:
       default: /Script/ ||fas fa-laptop-code
       材料試験: /material-test.html || fa fa-th
       行列一括変換: /transfor.html || fas fa-crop-alt
-    Code_tutorials:
-      default: /Code_tutorials/ || fas fa-code
+      Code_tutorials: /Code_tutorials.html || fas fa-code
+    Equipment:
+      default: /Equipment/ || fas fa-code
     How2Edit:
       default: /How2edit/ || fas fa-question
   #about: /about || fas fa-dog

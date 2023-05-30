@@ -202,9 +202,13 @@ sudo service smbd restart
 
 2. Process IDで停止する
    
-    - `ps -ef | grep abaqus`でabaqusのプロセスを確認する
-    ![](https://i.imgur.com/E6rLHOi.png)
+    - `ps -ef | grep /bin/standard`でabaqusのプロセスを確認する
+    ![](https://i.imgur.com/moNRiSO.png)
     - `kill -9 PID`でabaqusのプロセスを停止する
     - 
 3. `abaqus terminate job=jobname`でabaqusのジョブを停止する
+
+## その他
+- サーバーのファイルを確認する方法: [Winscp](https://winscp.net/eng/download.php)
+
 

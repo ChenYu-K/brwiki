@@ -208,6 +208,38 @@ sudo service smbd restart
     - 
 3. `abaqus terminate job=jobname`でabaqusのジョブを停止する
 
+## 他のPCのフォルダをマウントする方法（アクセス）
+
+**例**
+brabq10のフォルダをbrabq12にマウントする場合
+```bash
+sudo mount -t cifs -o username=bridge,password=lo7buckl //10.108.51.10/D /home/storage1/brabq10/d
+```
+
+###  マウントしたフォルダを確認する方法
+
+```bash
+user@brabq12:~$ df -h
+Filesystem                    Size  Used Avail Use% Mounted on
+tmpfs                          26G  6.7M   26G   1% /run
+/dev/nvme0n1p2                916G  134G  736G  16% /
+tmpfs                         126G     0  126G   0% /dev/shm
+tmpfs                         5.0M  4.0K  5.0M   1% /run/lock
+/dev/nvme0n1p1                511M  6.1M  505M   2% /boot/efi
+/dev/md127p1                   22T  732G   20T   4% /home/storage1
+tmpfs                          26G  148K   26G   1% /run/user/1000
+tmpfs                          26G  108K   26G   1% /run/user/1002
+tmpfs                          26G  104K   26G   1% /run/user/1001
+10.108.51.13:/volume1/common   49T   22T   28T  45% /home/storage1/nas_sy21/common
+//10.108.51.10/D              5.5T  2.2T  3.4T  39% /home/storage1/brabq10
+```
+
+### マウントしたフォルダをアンマウントする方法
+
+```bash
+umount /home/storage1/brabq10
+```
+
 ## その他
 - サーバーのファイルを確認する方法: [Winscp](https://winscp.net/eng/download.php)
 

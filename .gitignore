@@ -8,3 +8,4 @@ build.sh
 public/
 db.json
 backup1/
+.vscode/sftp.json

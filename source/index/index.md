@@ -4,13 +4,15 @@ date: 2021-10-20 18:20:04
 tags:
 ---
 
-{% note warning %}
-<i class="fas fa-cog fa-spin"></i> 新しい学生フォルダ： `\\NAS_sy21\student`．  2022.10.17 -chen。
-{% endnote %}
 
 {% note info %}
 Abaqus　[直列実行スクリプト](file://nas_sy21/common/%E4%BE%BF%E5%88%A9%E3%82%B0%E3%83%83%E3%82%BA/02.%E8%A7%A3%E6%9E%90/%E7%9B%B4%E5%88%97%E5%AE%9F%E8%A1%8C%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88/)をV11にアップデートしました．→[変更詳細はここ](https://github.com/ChenYu-K/Data-Processing/releases/tag/Abaqus-serial-execution-script)　2022.08.5-chen。  
 [📁`\\NAS_sy21\common\便利グッズ\02.解析\直列実行スクリプト`](http://10.108.51.13:5000/index.cgi?launchApp=SYNO.SDS.App.FileStation3.Instance&launchParam=openfile%3D%252Fcommon%252F%25E4%25BE%25BF%25E5%2588%25A9%25E3%2582%25B0%25E3%2583%2583%25E3%2582%25BA%252F02.%25E8%25A7%25A3%25E6%259E%2590%252F%25E7%259B%25B4%25E5%2588%2597%25E5%25AE%259F%25E8%25A1%258C%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2597%25E3%2583%2588%252F)
+{% endnote %}
+
+{% note info %}
+Brabq12で流した解析を止める方法
+→[詳細はここ](http://nas_sy21:5014/doc/Equipment/brabq12.html)
 {% endnote %}
 
 
@@ -21,8 +23,8 @@ Abaqus　[直列実行スクリプト](file://nas_sy21/common/%E4%BE%BF%E5%88%A9
 > 橋梁研住所：〒558-8585, C309, 3-3-138 Sugimoto Sumiyoshi-ku, OSAKA, Japan
 電話番号：06-6605-2765
 
-<i class="fas fa-home" style="color: #339af0;"></i> [橋梁研HP](http://brdg.civil.eng.osaka-cu.ac.jp/index.html)  
-<i class="fas fa-dove" style="color: #057bce;"></i>[desknet's NEO](https://bridge-ocu.dn-cloud.com/cgi-bin/dneo/dneo.cgi?cmd=schindex#cmd=schmonth&date=20211104&id=7)  
+<i class="fas fa-home" style="color: #339af0;"></i> [橋梁研HP](https://www.omu.ac.jp/eng/bridge/)  
+<i class="fas fa-dove" style="color: #057bce;"></i>[desknet's NEO](https://bridge-ocu.dn-cloud.com/cgi-bin/dneo/dneo.cgi?cmd=schindex#cmd=schmonth&date=20211104&id=7)
 
 - <i class="far fa-folder-open"></i> [ファイル共有システム({% label @new %})](https://www.bridge-omu.com/nextcloud/index.php/apps/files/?dir=/&fileid=144)
 - <i class="fas fa-school"></i> [教室予約システム](https://www.r326.com/b/main.aspx?g=rMSqVK3523reGnQ80)  (Password:`toshi`)
@@ -43,10 +45,10 @@ Abaqus　[直列実行スクリプト](file://nas_sy21/common/%E4%BE%BF%E5%88%A9
  [nas_sy21](http://10.108.51.13:7000/) のサイトバージョン  
 - 古い学生フォルダ：`\\ts5410d285\usbdisk1`  
 - Scandata: `\\nas_sy21\scandata`  
-- 2014-2018年度卒―解析データ： `\\BRABQ8\h`  
-- 2019年度以降―解析データ：`\\BRABQ7\f`  
+- 2014-2018年度卒―解析データ：`\\NAS_sy21\解析保存用\古い解析データ`
+ 
 
-# 解析  
+<!-- # 解析  
 
 <script>
 
@@ -58,7 +60,7 @@ document.write("<p> <img src=/images/caelisence.png?"+num+" width='80%'/></p>");
 document.write("<p> <img src=/images/lisence.png?"+num+" width='80%'/></p>");
 document.write("<p> <img src=/images/licensestatus.png?"+num+" width='60%'/></p>");
 
-</script>
+</script> -->
 
 {% note warning %}
 Issues-#7: [CAE&Tokenを使う人いない時スクリプトが止まる](https://github.com/ChenYu-K/Data-Processing/issues/7), 気づいたら再起動します．
@@ -68,7 +70,7 @@ Issues-#7: [CAE&Tokenを使う人いない時スクリプトが止まる](https:
 
 |License|Number|Total|
 |---|---|---|
-76| 2| 156|
+76| 2| 228|
 50| 1| 50|
 120| 3| 360|
 Total|6|566|
@@ -78,12 +80,13 @@ Total|6|566|
 {% note info %}
 - 基本、一人の人が複数のBrabqで同時に解析は流さない。
 - 流す場合は、全体に周知し、いつでも消せるようにしておく。
-- ライセンス期間：2023.4～2024.3，2023.8～2024.1
+- ライセンス期間：2024.4～2025.3，
 - ライセンス120は，BRABQ9，BRABQ10，BRABQ12で流す．  
+- 2024.4.1~2024.8.1までは，ライセンス76をBRABQ10，BRABQ12で一つずつ流す．
 - 1つのBRABQで流していい解析は2つまで．  
 - 1つのBRABQで流していいライセンス120は1つまで．  
 - データチェック用にライセンス50は残しておく.
-      　　　　　　　　　更新日：2023/02/16  
+      　　　　　　　　　更新日：2024/06/26  
 {% endnote %}
 
 
@@ -95,6 +98,10 @@ Abaqus license check:
 ```txt
 abaqus licensing dslsstat -usage
 ```
+token使用状況
+<img src="./pic/token_licensing.png" width="100%"/>
+CAE使用状況
+<img src="./pic/CAE_licensing.png" width="100%"/>
 
 # 実験
 
